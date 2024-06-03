@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/bw-modelica-ss01?styles=26391");
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -36,4 +37,36 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.header {
+  height: 86px;
+  background-color: #080185;
+}
+.header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .container .header__logo-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: -5px;
+}
+.header .container .header__nav ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-right: -20px;
+}
+.header .container .header__nav ul li a:link,
+.header .container .header__nav ul li a:visited,
+.header .container .header__nav ul li a:hover,
+.header .container .header__nav ul li a:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-size: 16px;
+  color: #e8f0fd;
+  line-height: 1.5em;
 }/*# sourceMappingURL=index.css.map */
