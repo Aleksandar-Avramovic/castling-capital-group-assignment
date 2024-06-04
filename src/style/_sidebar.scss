@@ -1,0 +1,79 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 86px;
+  margin-right: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  background-color: $primary-blue;
+  height: 80%;
+  max-width: 60%;
+  border-radius: 0 0 0 15%;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    li {
+      margin-bottom: 50px;
+
+      letter-spacing: 0.8px;
+      a {
+        font-size: 30px;
+        font-family: "Bw Modelica SS01", sans-serif;
+        color: $link-white;
+      }
+
+      a:hover {
+        color: $accent-blue;
+        transform: scale(1.2);
+      }
+    }
+    li:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include breakpoint(lg) {
+  .sidebar {
+    ul {
+      li {
+        a {
+          font-size: 26px;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(md) {
+  .sidebar {
+    height: 70%;
+    ul {
+      li {
+        margin-bottom: 40px;
+        a {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(sm) {
+  .sidebar {
+    height: 60%;
+    ul {
+      li {
+        margin-bottom: 40px;
+        a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
