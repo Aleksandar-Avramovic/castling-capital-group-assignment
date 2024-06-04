@@ -1,4 +1,5 @@
-@import url("https://fonts.cdnfonts.com/css/bw-modelica-ss01?styles=26391");
+@import url("https://fonts.cdnfonts.com/css/bw-modelica-ss01?styles=26393,26391,26383");
+@import url("https://fonts.cdnfonts.com/css/blacker-display?styles=46882");
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -59,7 +60,7 @@ a {
   display: flex;
   align-items: center;
   gap: 80px;
-  margin-right: -20px;
+  margin-right: -15px;
 }
 .header .container .header__nav ul li a:link,
 .header .container .header__nav ul li a:visited,
@@ -197,4 +198,43 @@ a {
   .sidebar ul li a {
     font-size: 20px;
   }
+}
+.hero {
+  height: 812px;
+  background: linear-gradient(90deg, rgb(8, 0, 133), 80%, rgba(8, 0, 133, 0));
+}
+.hero .container {
+  height: 100%;
+  display: flex;
+}
+.hero .container .hero__content {
+  width: 1250px;
+  padding-top: 179px;
+  margin-left: -5px;
+}
+.hero .container .hero__content .content__pretitle {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  line-height: 1.6em;
+  margin-bottom: 18px;
+}
+.hero .container .hero__content .content__title {
+  font-family: "Blacker Display", sans-serif;
+  font-size: 56px;
+  color: #fff;
+  line-height: 1.1em;
+  text-transform: capitalize;
+  margin-bottom: 37px;
+}
+.hero .container .hero__content .content__text {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.8em;
+  color: #fff;
+}
+.hero .container .hero__content .content__text--upper {
+  margin-bottom: 14px;
 }/*# sourceMappingURL=index.css.map */

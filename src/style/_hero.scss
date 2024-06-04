@@ -1,0 +1,45 @@
+.hero {
+  height: 812px;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 0, 133, 1),
+    80%,
+    rgba(8, 0, 133, 0)
+  );
+  .container {
+    height: 100%;
+    display: flex;
+
+    .hero__content {
+      width: 1250px;
+      padding-top: 179px;
+      margin-left: -5px;
+      .content__pretitle {
+        font-family: "Bw Modelica SS01", sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        color: $primary-white;
+        line-height: 1.6em;
+        margin-bottom: 18px;
+      }
+      .content__title {
+        font-family: "Blacker Display", sans-serif;
+        font-size: 56px;
+        color: $primary-white;
+        line-height: 1.1em;
+        text-transform: capitalize;
+        margin-bottom: 37px;
+      }
+      .content__text {
+        font-family: "Bw Modelica SS01", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.8em;
+        color: $primary-white;
+      }
+      .content__text--upper {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
