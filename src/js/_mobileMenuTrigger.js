@@ -1,6 +1,6 @@
 const mobileMenu = document.querySelector(".mobile-menu--toggle");
 const navbar = document.querySelector(".mobile-menu");
-const sidebar = document.getElementById("mySidebar");
+const sidebar = document.getElementById("sidebar");
 
 mobileMenu.addEventListener("click", function () {
   navbar.classList.toggle("mobile-menu--open");
