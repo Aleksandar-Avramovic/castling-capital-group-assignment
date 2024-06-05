@@ -11,7 +11,7 @@
     display: flex;
 
     .hero__content {
-      width: 1250px;
+      width: 757px;
       padding-top: 179px;
       margin-left: -5px;
       .content__pretitle {
@@ -36,9 +36,17 @@
         font-size: 16px;
         line-height: 1.8em;
         color: $primary-white;
+        width: 714px;
       }
       .content__text--upper {
         margin-bottom: 14px;
+      }
+      .content__text--lower {
+        margin-bottom: 34px;
+      }
+      .hero__btn {
+        padding: 16px 40px 16px 40px;
+        letter-spacing: 0.3px;
       }
     }
   }

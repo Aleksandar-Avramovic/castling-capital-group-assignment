@@ -40,6 +40,28 @@ a {
   text-decoration: none;
 }
 
+.button,
+.button:hover,
+.button:focus,
+.button:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.25em;
+  background-color: #4353ff;
+  border-radius: 32px;
+  border: 1px solid rgba(8, 0, 133, 0);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button:hover {
+  color: #4353ff;
+  background-color: #fff;
+  border: 1px solid #4353ff;
+}
+
 .header {
   height: 86px;
   background-color: #080185;
@@ -106,6 +128,7 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 9999;
 }
 
 @media (max-width: 1400px) {
@@ -208,7 +231,7 @@ a {
   display: flex;
 }
 .hero .container .hero__content {
-  width: 1250px;
+  width: 757px;
   padding-top: 179px;
   margin-left: -5px;
 }
@@ -234,7 +257,15 @@ a {
   font-size: 16px;
   line-height: 1.8em;
   color: #fff;
+  width: 714px;
 }
 .hero .container .hero__content .content__text--upper {
   margin-bottom: 14px;
+}
+.hero .container .hero__content .content__text--lower {
+  margin-bottom: 34px;
+}
+.hero .container .hero__content .hero__btn {
+  padding: 16px 40px 16px 40px;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=index.css.map */
