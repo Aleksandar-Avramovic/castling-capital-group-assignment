@@ -65,6 +65,8 @@ a {
 .header {
   height: 86px;
   background-color: #080185;
+  top: -86px;
+  transition: top 0.3s ease-in-out;
 }
 .header .container {
   height: 100%;
@@ -310,7 +312,7 @@ a {
 }
 .about-us {
   position: relative;
-  height: 672px;
+  height: 866px;
   background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
 }
 .about-us .container {
