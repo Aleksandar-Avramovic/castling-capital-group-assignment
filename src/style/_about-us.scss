@@ -3,9 +3,11 @@
   height: 866px;
   background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
   padding-top: 77px;
+  padding-left: 41px;
   .container {
     height: 518.4px;
     display: flex;
+    justify-content: space-between;
     .about-us__card {
       width: 760.32px;
       height: 518.4px;
@@ -13,7 +15,7 @@
       z-index: 2;
       padding: 74px 0 0 60px;
       box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
-      margin-left: -64px;
+      margin-left: -84px;
       .card__content {
         width: 640px;
         .content__pretitle {
@@ -39,6 +41,21 @@
           line-height: 1.5em;
         }
       }
+    }
+    .about-us__img-wrapper {
+      align-self: center;
+      width: 340.06px;
+      height: 340.06px;
+      border-radius: 163.95px 163.95px 0 0;
+      background: linear-gradient(
+        135deg,
+        rgba(27, 39, 113, 1),
+        rgba(51, 74, 215, 1)
+      );
+      box-shadow: 0 0 40.99px rgba(67, 83, 255, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   }
 }
