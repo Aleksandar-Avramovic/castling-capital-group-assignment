@@ -1,0 +1,58 @@
+.about-us {
+  position: relative;
+  height: 672px;
+  background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
+  .container {
+    height: 100%;
+
+    .about-us__card {
+      width: 760.32px;
+      height: 518.4px;
+      background-color: $primary-white;
+      position: absolute;
+      z-index: 2;
+      top: 77px;
+      left: 240px;
+      padding: 74px 0 0 60px;
+      .card__content {
+        width: 640px;
+        .content__pretitle {
+          font-family: "Bw Modelica SS01";
+          font-weight: 600;
+          font-size: 16px;
+          color: $text-blue;
+          line-height: 1.5em;
+          margin-bottom: 16px;
+        }
+        .content__title {
+          font-family: "Blacker Display";
+          font-size: 32px;
+          color: $text-blue;
+          line-height: 1.4em;
+          margin-bottom: 30px;
+        }
+        .content__text {
+          font-family: "Bw Modelica SS01";
+          font-weight: 500;
+          font-size: 16px;
+          color: $text-blue;
+          line-height: 1.5em;
+        }
+      }
+    }
+  }
+}
+
+.about-us {
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: inline-block;
+    width: 640px;
+    height: 672px;
+    background-color: $text-blue;
+  }
+}

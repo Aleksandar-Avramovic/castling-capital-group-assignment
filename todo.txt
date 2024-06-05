@@ -1,3 +1,4 @@
 1. Proveri font za naslove
 2. Promeni hover state linkova i dugmica (Anja Slack)
+3. Promeni hero section responsive (font-size i width)
 . Ostale su ti animacije

@@ -1,5 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/bw-modelica-ss01?styles=26393,26391,26383");
-@import url("https://fonts.cdnfonts.com/css/blacker-display?styles=46882");
+@import url("https://fonts.cdnfonts.com/css/blacker-display?styles=46883");
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -307,4 +307,59 @@ a {
   .hero .container .hero__content .content__title {
     font-size: 40px;
   }
+}
+.about-us {
+  position: relative;
+  height: 672px;
+  background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
+}
+.about-us .container {
+  height: 100%;
+}
+.about-us .container .about-us__card {
+  width: 760.32px;
+  height: 518.4px;
+  background-color: #fff;
+  position: absolute;
+  z-index: 2;
+  top: 77px;
+  left: 240px;
+  padding: 74px 0 0 60px;
+}
+.about-us .container .about-us__card .card__content {
+  width: 640px;
+}
+.about-us .container .about-us__card .card__content .content__pretitle {
+  font-family: "Bw Modelica SS01";
+  font-weight: 600;
+  font-size: 16px;
+  color: #151f5a;
+  line-height: 1.5em;
+  margin-bottom: 16px;
+}
+.about-us .container .about-us__card .card__content .content__title {
+  font-family: "Blacker Display";
+  font-size: 32px;
+  color: #151f5a;
+  line-height: 1.4em;
+  margin-bottom: 30px;
+}
+.about-us .container .about-us__card .card__content .content__text {
+  font-family: "Bw Modelica SS01";
+  font-weight: 500;
+  font-size: 16px;
+  color: #151f5a;
+  line-height: 1.5em;
+}
+
+.about-us .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 640px;
+  height: 672px;
+  background-color: #151f5a;
 }/*# sourceMappingURL=index.css.map */
