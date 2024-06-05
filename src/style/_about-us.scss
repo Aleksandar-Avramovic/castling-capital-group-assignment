@@ -2,17 +2,18 @@
   position: relative;
   height: 866px;
   background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
+  padding-top: 77px;
   .container {
-    height: 100%;
+    height: 518.4px;
+    display: flex;
     .about-us__card {
       width: 760.32px;
       height: 518.4px;
       background-color: $primary-white;
-      position: absolute;
       z-index: 2;
-      top: 77px;
-      left: 240px;
       padding: 74px 0 0 60px;
+      box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
+      margin-left: -64px;
       .card__content {
         width: 640px;
         .content__pretitle {
