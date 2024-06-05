@@ -1,11 +1,14 @@
 .hero {
   height: 812px;
   background: linear-gradient(
-    90deg,
-    rgba(8, 0, 133, 1),
-    80%,
-    rgba(8, 0, 133, 0)
-  );
+      90deg,
+      rgba(8, 0, 133, 1),
+      80%,
+      rgba(8, 0, 133, 0)
+    ),
+    url("../../assets/images/hero.png");
+  background-repeat: no-repeat;
+  background-position: right;
   .container {
     height: 100%;
     display: flex;
@@ -47,6 +50,62 @@
       .hero__btn {
         padding: 16px 40px 16px 40px;
         letter-spacing: 0.3px;
+      }
+    }
+  }
+}
+
+@include breakpoint(xl) {
+  .hero {
+    .container {
+      .hero__content {
+        width: 100%;
+        margin: 0;
+        .content__title {
+          font-size: 50px;
+        }
+        .content__text {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(lg) {
+  .hero {
+    .container {
+      .hero__content {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include breakpoint(md) {
+  .hero {
+    .container {
+      .hero__content {
+        padding-top: 120px;
+        .content__pretitle {
+          font-size: 18px;
+        }
+        .content__title {
+          font-size: 46px;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(sm) {
+  .hero {
+    .container {
+      .hero__content {
+        padding-top: 100px;
+        .content__title {
+          font-size: 40px;
+        }
       }
     }
   }
