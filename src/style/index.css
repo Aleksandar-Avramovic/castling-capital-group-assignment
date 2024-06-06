@@ -527,4 +527,83 @@ a {
   font-size: 16px;
   line-height: 1.5em;
   color: #fff;
+}
+
+.contact {
+  height: 750px;
+  background-color: #fff;
+  padding-top: 98px;
+  margin-left: -9px;
+}
+.contact .container .container__content {
+  width: 534px;
+}
+.contact .container .container__content .content__pretitle {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2em;
+  color: #151f5a;
+  margin-bottom: 9px;
+}
+.contact .container .container__content .content__title {
+  font-family: "Blacker Display", sans-serif;
+  font-size: 48px;
+  line-height: 1.33em;
+  color: #151f5a;
+  margin-bottom: 30px;
+}
+.contact .container .container__content .content__text {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151f5a;
+  margin-bottom: 32px;
+}
+.contact .container .container__content .content__info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.contact .container .container__content .content__info .info__address {
+  display: flex;
+  gap: 24px;
+}
+.contact .container .container__content .content__info .info__address .address__logo {
+  width: 32px;
+  height: 32px;
+}
+.contact .container .container__content .content__info .info__address .address__link:link,
+.contact .container .container__content .content__info .info__address .address__link:visited,
+.contact .container .container__content .content__info .info__address .address__link:hover,
+.contact .container .container__content .content__info .info__address .address__link:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151f5a;
+  transition: 0.3s ease;
+}
+.contact .container .container__content .content__info .info__address .address__link:hover {
+  color: #4353ff;
+}
+.contact .container .container__content .content__info .info__phone {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.contact .container .container__content .content__info .info__phone .phone__link:link,
+.contact .container .container__content .content__info .info__phone .phone__link:visited,
+.contact .container .container__content .content__info .info__phone .phone__link:hover,
+.contact .container .container__content .content__info .info__phone .phone__link:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151f5a;
+  transition: 0.3s ease;
+}
+.contact .container .container__content .content__info .info__phone .phone__link:hover {
+  color: #4353ff;
 }/*# sourceMappingURL=index.css.map */

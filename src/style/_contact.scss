@@ -1,0 +1,84 @@
+.contact {
+  height: 750px;
+  background-color: $primary-white;
+  padding-top: 98px;
+  margin-left: -9px;
+  .container {
+    .container__content {
+      width: 534px;
+      .content__pretitle {
+        font-family: "Bw Modelica SS01", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 2em;
+        color: $text-blue;
+        margin-bottom: 9px;
+      }
+      .content__title {
+        font-family: "Blacker Display", sans-serif;
+        font-size: 48px;
+        line-height: 1.33em;
+        color: $text-blue;
+        margin-bottom: 30px;
+      }
+      .content__text {
+        font-family: "Bw Modelica SS01", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5em;
+        color: $text-blue;
+        margin-bottom: 32px;
+      }
+      .content__info {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        .info__address {
+          display: flex;
+          gap: 24px;
+          .address__logo {
+            width: 32px;
+            height: 32px;
+          }
+          .address__link:link,
+          .address__link:visited,
+          .address__link:hover,
+          .address__link:active {
+            font-family: "Bw Modelica SS01", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5em;
+            color: $text-blue;
+            transition: 0.3s ease;
+          }
+          .address__link:hover {
+            color: $accent-blue;
+          }
+        }
+        .info__phone {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          .phone__link:link,
+          .phone__link:visited,
+          .phone__link:hover,
+          .phone__link:active {
+            font-family: "Bw Modelica SS01", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5em;
+            color: $text-blue;
+            transition: 0.3s ease;
+          }
+          .phone__link:hover {
+            color: $accent-blue;
+          }
+        }
+        .info__email {
+        }
+      }
+    }
+    .container__form {
+    }
+  }
+}
