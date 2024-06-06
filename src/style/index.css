@@ -465,4 +465,61 @@ a {
   font-size: 16px;
   color: #fff;
   line-height: 1.5em;
+}
+.team {
+  background-color: #080185;
+  height: 744px;
+  padding-top: 129px;
+  margin-left: -9px;
+}
+.team .container .container__content {
+  width: 688px;
+}
+.team .container .container__content .content__pretitle {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 2em;
+  color: #fff;
+  margin-bottom: 9px;
+}
+.team .container .container__content .content__title {
+  font-family: "Blacker Display", sans-serif;
+  font-size: 48px;
+  line-height: 1.33em;
+  color: #fff;
+  margin-bottom: 55px;
+}
+.team .container .container__content .content__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 64px;
+  grid-row-gap: 24px;
+}
+.team .container .container__content .content__cards .cards__card {
+  width: 312px;
+}
+.team .container .container__content .content__cards .cards__card .card__name {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.33em;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.team .container .container__content .content__cards .cards__card .card__job-title {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.team .container .container__content .content__cards .cards__card .card__text {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #fff;
 }/*# sourceMappingURL=index.css.map */
