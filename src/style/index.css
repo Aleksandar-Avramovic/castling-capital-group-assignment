@@ -467,10 +467,15 @@ a {
   line-height: 1.5em;
 }
 .team {
+  position: relative;
   background-color: #080185;
+  background-image: url("../../assets/images/team-background-img.png");
+  background-repeat: no-repeat;
+  background-position: top right;
   height: 744px;
   padding-top: 129px;
   margin-left: -9px;
+  z-index: 3;
 }
 .team .container .container__content {
   width: 688px;

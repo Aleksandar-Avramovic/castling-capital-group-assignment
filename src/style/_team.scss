@@ -1,8 +1,13 @@
 .team {
+  position: relative;
   background-color: $primary-blue;
+  background-image: url("../../assets/images/team-background-img.png");
+  background-repeat: no-repeat;
+  background-position: top right;
   height: 744px;
   padding-top: 129px;
   margin-left: -9px;
+  z-index: 3;
   .container {
     .container__content {
       width: 688px;
