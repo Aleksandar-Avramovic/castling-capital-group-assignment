@@ -346,7 +346,7 @@ a {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
-  line-height: 1.4em;
+  line-height: 1.375em;
   margin-bottom: 30px;
 }
 .about-us .container .about-us__card .card__content .content__text {
@@ -378,4 +378,79 @@ a {
   width: 640px;
   height: 672px;
   background-color: #151f5a;
+}
+
+.our-approach {
+  display: flex;
+  align-items: center;
+  height: 1136px;
+  background: linear-gradient(to bottom, rgb(232, 240, 253) 47%, #080185 47%);
+  padding-left: 14px;
+}
+.our-approach .container {
+  display: flex;
+  flex-direction: column;
+  gap: 130px;
+  padding: 64px 88px;
+  width: 1320px;
+  height: 904px;
+  background-color: #fff;
+  box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
+}
+.our-approach .container .container__upper-section {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.our-approach .container .container__upper-section .upper-section__img-wrapper {
+  width: 340px;
+  height: 340px;
+  border-radius: 163.84px 163.84px 0 0;
+  background: linear-gradient(135deg, rgb(27, 39, 113), rgb(51, 74, 215));
+  box-shadow: 0 0 40.96px rgba(67, 83, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.our-approach .container .container__upper-section .upper-section__content {
+  width: 640px;
+  padding-top: 10px;
+}
+.our-approach .container .container__upper-section .upper-section__content .content__pretitle {
+  font-family: "Bw Modelica SS01";
+  font-weight: 600;
+  font-size: 16px;
+  color: #151f5a;
+  line-height: 2em;
+  margin-bottom: 6px;
+}
+.our-approach .container .container__upper-section .upper-section__content .content__title {
+  font-family: "Blacker Display";
+  font-size: 32px;
+  color: #151f5a;
+  line-height: 1.375em;
+  margin-bottom: 26px;
+}
+.our-approach .container .container__upper-section .upper-section__content .content__text {
+  font-family: "Bw Modelica SS01";
+  font-weight: 500;
+  font-size: 16px;
+  color: #151f5a;
+  line-height: 1.5em;
+}
+.our-approach .container .container__lower-section {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgb(27, 39, 113), rgb(51, 74, 215));
+  width: 100%;
+  height: 308px;
+}
+.our-approach .container .container__lower-section .lower-section__content {
+  width: 572px;
+}
+.our-approach .container .container__lower-section .lower-section__content .content__title {
+  font-family: "Blacker Display";
+  font-size: 32px;
+  color: #151f5a;
+  line-height: 1.375em;
 }/*# sourceMappingURL=index.css.map */

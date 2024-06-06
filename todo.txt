@@ -1,4 +1,5 @@
-1. Proveri font za naslove
-2. Promeni hover state linkova i dugmica (Anja Slack)
-3. Promeni hero section responsive (font-size i width)
-. Ostale su ti animacije
+- promeni hover na linkovima
+- Odradi responsive za sve sekcije
+- Ostale su ti animacije
+- Lepse organizuj js fajlove tako da u HTML ukljucis samo jedan poziv
+- Iscackaj kako bi mogao da koristis @extend u Sass-u da ne bi ponavljao kod bazicne stilizacije
