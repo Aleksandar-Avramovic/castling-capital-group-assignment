@@ -535,6 +535,9 @@ a {
   padding-top: 98px;
   margin-left: -9px;
 }
+.contact .container {
+  display: flex;
+}
 .contact .container .container__content {
   width: 534px;
 }
@@ -625,4 +628,36 @@ a {
 }
 .contact .container .container__content .content__info .info__email .email__link:hover {
   color: #4353ff;
+}
+.contact .container .container__form form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contact .container .container__form form input,
+.contact .container .container__form form textarea {
+  width: 424px;
+  height: 56px;
+  border: 1px solid #ada9bb;
+  border-radius: 4px;
+  padding: 16px 20px;
+}
+.contact .container .container__form form input::-moz-placeholder, .contact .container .container__form form textarea::-moz-placeholder {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #ada9bb;
+}
+.contact .container .container__form form input::placeholder,
+.contact .container .container__form form textarea::placeholder {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #ada9bb;
+}
+.contact .container .container__form form textarea {
+  height: 224px;
+  resize: none;
 }/*# sourceMappingURL=index.css.map */

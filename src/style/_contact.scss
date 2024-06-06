@@ -4,6 +4,7 @@
   padding-top: 98px;
   margin-left: -9px;
   .container {
+    display: flex;
     .container__content {
       width: 534px;
       .content__pretitle {
@@ -96,6 +97,31 @@
       }
     }
     .container__form {
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        input,
+        textarea {
+          width: 424px;
+          height: 56px;
+          border: 1px solid $input-border;
+          border-radius: 4px;
+          padding: 16px 20px;
+        }
+        input::placeholder,
+        textarea::placeholder {
+          font-family: "Bw Modelica SS01", sans-serif;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 1.5em;
+          color: $input-border;
+        }
+        textarea {
+          height: 224px;
+          resize: none;
+        }
+      }
     }
   }
 }
