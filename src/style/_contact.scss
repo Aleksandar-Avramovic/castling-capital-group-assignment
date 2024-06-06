@@ -5,6 +5,7 @@
   margin-left: -9px;
   .container {
     display: flex;
+    justify-content: space-between;
     .container__content {
       width: 534px;
       .content__pretitle {
@@ -97,6 +98,7 @@
       }
     }
     .container__form {
+      margin-right: -24px;
       form {
         display: flex;
         flex-direction: column;
@@ -120,6 +122,11 @@
         textarea {
           height: 224px;
           resize: none;
+          margin-bottom: 15px;
+        }
+        button {
+          padding: 16px 40px;
+          width: 139px;
         }
       }
     }

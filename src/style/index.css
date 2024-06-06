@@ -537,6 +537,7 @@ a {
 }
 .contact .container {
   display: flex;
+  justify-content: space-between;
 }
 .contact .container .container__content {
   width: 534px;
@@ -629,6 +630,9 @@ a {
 .contact .container .container__content .content__info .info__email .email__link:hover {
   color: #4353ff;
 }
+.contact .container .container__form {
+  margin-right: -24px;
+}
 .contact .container .container__form form {
   display: flex;
   flex-direction: column;
@@ -660,4 +664,9 @@ a {
 .contact .container .container__form form textarea {
   height: 224px;
   resize: none;
+  margin-bottom: 15px;
+}
+.contact .container .container__form form button {
+  padding: 16px 40px;
+  width: 139px;
 }/*# sourceMappingURL=index.css.map */
