@@ -669,4 +669,10 @@ a {
 .contact .container .container__form form button {
   padding: 16px 40px;
   width: 139px;
+}
+
+.footer {
+  height: 470px;
+  background-color: #151f5a;
+  border-radius: 64px 64px 0 0;
 }/*# sourceMappingURL=index.css.map */
