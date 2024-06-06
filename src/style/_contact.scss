@@ -75,6 +75,23 @@
           }
         }
         .info__email {
+          display: flex;
+          align-items: center;
+          gap: 24px;
+          .email__link:link,
+          .email__link:visited,
+          .email__link:hover,
+          .email__link:active {
+            font-family: "Bw Modelica SS01", sans-serif;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.5em;
+            color: $text-blue;
+            transition: 0.3s ease;
+          }
+          .email__link:hover {
+            color: $accent-blue;
+          }
         }
       }
     }

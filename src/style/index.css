@@ -606,4 +606,23 @@ a {
 }
 .contact .container .container__content .content__info .info__phone .phone__link:hover {
   color: #4353ff;
+}
+.contact .container .container__content .content__info .info__email {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.contact .container .container__content .content__info .info__email .email__link:link,
+.contact .container .container__content .content__info .info__email .email__link:visited,
+.contact .container .container__content .content__info .info__email .email__link:hover,
+.contact .container .container__content .content__info .info__email .email__link:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151f5a;
+  transition: 0.3s ease;
+}
+.contact .container .container__content .content__info .info__email .email__link:hover {
+  color: #4353ff;
 }/*# sourceMappingURL=index.css.map */
