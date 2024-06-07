@@ -6,12 +6,16 @@ document.addEventListener("DOMContentLoaded", function () {
       event.preventDefault();
 
       const targetId = this.getAttribute("href").substring(1);
+
       const targetElement = document.getElementById(targetId);
 
-      window.scrollTo({
-        top: targetElement.offsetTop - 86,
-        behavior: "smooth",
-      });
+      if (targetElement) {
+        // Smooth scroll to the target element
+        window.scrollTo({
+          top: targetElement.offsetTop - 86,
+          behavior: "smooth",
+        });
+      }
     });
   }
 });
