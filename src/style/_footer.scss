@@ -3,5 +3,29 @@
   background-color: $text-blue;
   border-radius: 64px 64px 0 0;
   .container {
+    .container__upper-section {
+      .upper-section__logo {
+      }
+      .upper-section__nav {
+        ul {
+          li {
+            a {
+            }
+          }
+        }
+      }
+      .upper-section__icon {
+      }
+    }
+    .container__lower-section {
+      .lower-section__content {
+        .content__title {
+        }
+        .content__text {
+        }
+        .content__copyright {
+        }
+      }
+    }
   }
 }

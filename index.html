@@ -1,33 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Castling Capital Group</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.cdnfonts.com/css/bw-modelica-ss01?styles=26391"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/style/index.css" />
-  </head>
 
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__logo-wrapper">
-          <img
-            src="./assets/images/logo.png"
-            alt="company logo"
-            class="img-fluid"
-          />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Castling Capital Group</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link href="https://fonts.cdnfonts.com/css/bw-modelica-ss01?styles=26391" rel="stylesheet" />
+  <link rel="stylesheet" href="src/style/index.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__logo-wrapper">
+        <img src="./assets/images/logo.png" alt="company logo" class="img-fluid" />
+      </div>
+      <nav class="header__nav">
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Our Approach</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-menu">
+        <div class="mobile-menu--toggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </div>
-        <nav class="header__nav">
+      </div>
+    </div>
+  </header>
+
+  <div class="sidebar container" id="sidebar">
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Our Approach</a></li>
+      <li><a href="#">Team</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <p class="content__pretitle">
+          Castling Capital Group - Private Equity & Management
+        </p>
+        <h1 class="content__title">
+          Access the highest-quality real estate investments
+        </h1>
+        <p class="content__text content__text--upper">
+          Castling Capital acquires, invests and manages real estate assets
+          with a focus on both near-term income generation and long-term value
+          creation.
+        </p>
+        <p class="content__text content__text--lower">
+          Pinchus Scwhartz, Founder and CEO, created Castling Capital to
+          provide everyday investors access to the institutional-grade real
+          estate based opportunities that are normally reserved for only the
+          largest investors.
+        </p>
+        <button class="hero__btn button" id="email-btn">
+          Schedule a consultation
+        </button>
+      </div>
+      <!-- <div class="hero__img-wrapper">
+          <img
+            class="hero__img"
+            src="./assets/images/hero.png"
+            alt="model of four buildings"
+          />
+        </div> -->
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="container">
+      <div class="about-us__card">
+        <div class="card__content">
+          <p class="content__pretitle">About Us</p>
+          <h2 class="content__title">
+            Castling Capital Group is the industry’s preeminent boutique real
+            estate capital advisory firm.
+          </h2>
+          <p class="content__text">
+            Castling offers a wide variety of cutting-edge commercial real
+            estate capital markets financing solutions, including debt and
+            mezzanine financing, preferred and joint venture equity, sponsor
+            equity, and investment sales. The privately held company is
+            headquartered in New York City with, The firm is highly regarded
+            in the industry for its integrity, creativity, and
+            client-advocacy. Our distinctive advisory services are tailored to
+            service LP and GP investors, family offices and high net
+            individuals, institutional and private funds.
+          </p>
+        </div>
+      </div>
+      <div class="about-us__img-wrapper">
+        <img class="about-us__img" src="./assets/images/about-us.png" alt="two chess pieces" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Approach Section -->
+  <section class="our-approach">
+    <div class="container">
+      <div class="container__upper-section">
+        <div class="upper-section__img-wrapper">
+          <img src="./assets/images/our-approach-upper.png" alt="a hand picking up a chess piece" />
+        </div>
+        <div class="upper-section__content">
+          <p class="content__pretitle">Our approach</p>
+          <h2 class="content__title">What We Do</h2>
+          <p class="content__text">
+            For the last 10 years Castling advised experienced real estate and
+            finance professionals and acquired a sizeable real estate
+            portfolio, By collaboratively working with our partners, we were
+            able to be a big part in growth of many now well known real estate
+            enterprises both on the finance side and investor side, now we are
+            here to take all our relationships and experiences we have built
+            to level the playing field and guide everyday people how to build
+            and preserve wealth. Castling selects investment opportunities
+            ranging from residential real estate and development, Commercial
+            and industrial assets, healthcare, hospitality, and related
+            businesses among others.
+          </p>
+        </div>
+      </div>
+      <div class="container__lower-section">
+        <div class="lower-section__content">
+          <h2 class="content__title">Aligning experience with equity</h2>
+          <p class="content__text">
+            Castling has leveraged their robust deal flow for direct
+            investments as well as buyout and growth equity co-investments
+            since 2016.  By aligning our expertise in Real Estate Capital to
+            our portfolio , Castling maximizes our capabilities to help
+            investors scale, and navigate markets in a capital efficient
+            manner.
+          </p>
+        </div>
+        <div class="lower-section__img-wrapper">
+          <img src="./assets/images/our-approach-lower.png" alt="two chess pieces" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team">
+    <div class="container">
+      <div class="container__content">
+        <p class="content__pretitle">Team</p>
+        <h2 class="content__title">Get to Know Us</h2>
+        <div class="content__cards">
+          <div class="cards__card">
+            <h3 class="card__name">Full Name</h3>
+            <p class="card__job-title">Job title</p>
+            <p class="card__text">
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+          </div>
+          <div class="cards__card">
+            <h3 class="card__name">Full Name</h3>
+            <p class="card__job-title">Job title</p>
+            <p class="card__text">
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+          </div>
+          <div class="cards__card">
+            <h3 class="card__name">Full Name</h3>
+            <p class="card__job-title">Job title</p>
+            <p class="card__text">
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+          </div>
+          <div class="cards__card">
+            <h3 class="card__name">Full Name</h3>
+            <p class="card__job-title">Job title</p>
+            <p class="card__text">
+              I am text block. Click edit button to change this text. Lorem
+              ipsum dolor sit amet, consectetur adipiscing elit. 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <div class="container">
+      <div class="container__content">
+        <p class="content__pretitle">Contact</p>
+        <h2 class="content__title">
+          Thank you for your interest in Castling
+        </h2>
+        <p class="content__text">
+          If you have questions or comments, please fill out the contact form
+          and our team will respond shortly.
+        </p>
+        <div class="content__info">
+          <div class="info__address">
+            <img class="address__logo" src="./assets/images/location-logo.png" alt="location logo" />
+            <a class="address__link" target="_blank"
+              href="https://www.google.com/maps/place/2+Skillman+St,+Brooklyn,+NY+11205,+USA/@40.6985348,-73.9606448,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25be9c071d849:0xad643436aece1a6d!8m2!3d40.6985308!4d-73.9580699!16s%2Fg%2F11c2cmqwws?entry=ttu">The
+              Apple Building <br />2 Skillman Street, Brooklyn, NY
+              11205</a>
+          </div>
+          <div class="info__phone">
+            <img class="phone__logo" src="./assets/images/phone-logo.png" alt="phone logo" />
+            <a class="phone__link" href="tel:1-(718)-305-7361">1-(718)-305-7361</a>
+          </div>
+          <div class="info__email">
+            <img class="email__logo" src="./assets/images/email-logo.png" alt="email logo" />
+            <a class="email__link" href="mailto:goran@forwardslashny.com">info@castlingcapital.com</a>
+          </div>
+        </div>
+      </div>
+      <div class="container__form">
+        <form class="form">
+          <input type="text" placeholder="Name *" required />
+          <input type="email" placeholder="Email *" required />
+          <input type="tel" placeholder="Phone *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="111-111-1111" required />
+          <textarea placeholder="Message"></textarea>
+          <button type="submit" class="form__btn button">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="container__upper-section">
+        <img class="upper-section__logo" src="" alt="">
+        <nav class="upper-section__nav">
           <ul>
             <li><a href="#">About Us</a></li>
             <li><a href="#">Our Approach</a></li>
@@ -35,260 +252,24 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </nav>
-
-        <div class="mobile-menu">
-          <div class="mobile-menu--toggle">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </div>
+        <img class="upper-section__icon" src="" alt="">
+      </div>
+      <div class="container__lower-section">
+        <div class="lower-section__content">
+          <p class="content__title"></p>
+          <p class="content__text"></p>
+          <p class="content__copyright"></p>
         </div>
       </div>
-    </header>
-
-    <div class="sidebar container" id="sidebar">
-      <ul>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Our Approach</a></li>
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
     </div>
+  </footer>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero__content">
-          <p class="content__pretitle">
-            Castling Capital Group - Private Equity & Management
-          </p>
-          <h1 class="content__title">
-            Access the highest-quality real estate investments
-          </h1>
-          <p class="content__text content__text--upper">
-            Castling Capital acquires, invests and manages real estate assets
-            with a focus on both near-term income generation and long-term value
-            creation.
-          </p>
-          <p class="content__text content__text--lower">
-            Pinchus Scwhartz, Founder and CEO, created Castling Capital to
-            provide everyday investors access to the institutional-grade real
-            estate based opportunities that are normally reserved for only the
-            largest investors.
-          </p>
-          <button class="hero__btn button" id="email-btn">
-            Schedule a consultation
-          </button>
-        </div>
-        <!-- <div class="hero__img-wrapper">
-          <img
-            class="hero__img"
-            src="./assets/images/hero.png"
-            alt="model of four buildings"
-          />
-        </div> -->
-      </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section class="about-us">
-      <div class="container">
-        <div class="about-us__card">
-          <div class="card__content">
-            <p class="content__pretitle">About Us</p>
-            <h2 class="content__title">
-              Castling Capital Group is the industry’s preeminent boutique real
-              estate capital advisory firm.
-            </h2>
-            <p class="content__text">
-              Castling offers a wide variety of cutting-edge commercial real
-              estate capital markets financing solutions, including debt and
-              mezzanine financing, preferred and joint venture equity, sponsor
-              equity, and investment sales. The privately held company is
-              headquartered in New York City with, The firm is highly regarded
-              in the industry for its integrity, creativity, and
-              client-advocacy. Our distinctive advisory services are tailored to
-              service LP and GP investors, family offices and high net
-              individuals, institutional and private funds.
-            </p>
-          </div>
-        </div>
-        <div class="about-us__img-wrapper">
-          <img
-            class="about-us__img"
-            src="./assets/images/about-us.png"
-            alt="two chess pieces"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Our Approach Section -->
-    <section class="our-approach">
-      <div class="container">
-        <div class="container__upper-section">
-          <div class="upper-section__img-wrapper">
-            <img
-              src="./assets/images/our-approach-upper.png"
-              alt="a hand picking up a chess piece"
-            />
-          </div>
-          <div class="upper-section__content">
-            <p class="content__pretitle">Our approach</p>
-            <h2 class="content__title">What We Do</h2>
-            <p class="content__text">
-              For the last 10 years Castling advised experienced real estate and
-              finance professionals and acquired a sizeable real estate
-              portfolio, By collaboratively working with our partners, we were
-              able to be a big part in growth of many now well known real estate
-              enterprises both on the finance side and investor side, now we are
-              here to take all our relationships and experiences we have built
-              to level the playing field and guide everyday people how to build
-              and preserve wealth. Castling selects investment opportunities
-              ranging from residential real estate and development, Commercial
-              and industrial assets, healthcare, hospitality, and related
-              businesses among others.
-            </p>
-          </div>
-        </div>
-        <div class="container__lower-section">
-          <div class="lower-section__content">
-            <h2 class="content__title">Aligning experience with equity</h2>
-            <p class="content__text">
-              Castling has leveraged their robust deal flow for direct
-              investments as well as buyout and growth equity co-investments
-              since 2016.  By aligning our expertise in Real Estate Capital to
-              our portfolio , Castling maximizes our capabilities to help
-              investors scale, and navigate markets in a capital efficient
-              manner.
-            </p>
-          </div>
-          <div class="lower-section__img-wrapper">
-            <img
-              src="./assets/images/our-approach-lower.png"
-              alt="two chess pieces"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="team">
-      <div class="container">
-        <div class="container__content">
-          <p class="content__pretitle">Team</p>
-          <h2 class="content__title">Get to Know Us</h2>
-          <div class="content__cards">
-            <div class="cards__card">
-              <h3 class="card__name">Full Name</h3>
-              <p class="card__job-title">Job title</p>
-              <p class="card__text">
-                I am text block. Click edit button to change this text. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. 
-              </p>
-            </div>
-            <div class="cards__card">
-              <h3 class="card__name">Full Name</h3>
-              <p class="card__job-title">Job title</p>
-              <p class="card__text">
-                I am text block. Click edit button to change this text. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. 
-              </p>
-            </div>
-            <div class="cards__card">
-              <h3 class="card__name">Full Name</h3>
-              <p class="card__job-title">Job title</p>
-              <p class="card__text">
-                I am text block. Click edit button to change this text. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. 
-              </p>
-            </div>
-            <div class="cards__card">
-              <h3 class="card__name">Full Name</h3>
-              <p class="card__job-title">Job title</p>
-              <p class="card__text">
-                I am text block. Click edit button to change this text. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. 
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact">
-      <div class="container">
-        <div class="container__content">
-          <p class="content__pretitle">Contact</p>
-          <h2 class="content__title">
-            Thank you for your interest in Castling
-          </h2>
-          <p class="content__text">
-            If you have questions or comments, please fill out the contact form
-            and our team will respond shortly.
-          </p>
-          <div class="content__info">
-            <div class="info__address">
-              <img
-                class="address__logo"
-                src="./assets/images/location-logo.png"
-                alt="location logo"
-              />
-              <a
-                class="address__link"
-                target="_blank"
-                href="https://www.google.com/maps/place/2+Skillman+St,+Brooklyn,+NY+11205,+USA/@40.6985348,-73.9606448,17z/data=!3m1!4b1!4m6!3m5!1s0x89c25be9c071d849:0xad643436aece1a6d!8m2!3d40.6985308!4d-73.9580699!16s%2Fg%2F11c2cmqwws?entry=ttu"
-                >The Apple Building <br />2 Skillman Street, Brooklyn, NY
-                11205</a
-              >
-            </div>
-            <div class="info__phone">
-              <img
-                class="phone__logo"
-                src="./assets/images/phone-logo.png"
-                alt="phone logo"
-              />
-              <a class="phone__link" href="tel:1-(718)-305-7361"
-                >1-(718)-305-7361</a
-              >
-            </div>
-            <div class="info__email">
-              <img
-                class="email__logo"
-                src="./assets/images/email-logo.png"
-                alt="email logo"
-              />
-              <a class="email__link" href="mailto:goran@forwardslashny.com"
-                >info@castlingcapital.com</a
-              >
-            </div>
-          </div>
-        </div>
-        <div class="container__form">
-          <form class="form">
-            <input type="text" placeholder="Name *" required />
-            <input type="text" placeholder="Email *" required />
-            <input type="text" placeholder="Phone *" required />
-            <textarea placeholder="Message"></textarea>
-            <button type="submit" class="form__btn button">Submit</button>
-          </form>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <div class="container"></div>
-    </footer>
-
-    <script src="./src/js/jquery-3.7.1.slim.js"></script>
-    <script src="./src/js/stickyHeader.js"></script>
-    <script src="./src/js/mobileMenuTrigger.js"></script>
-    <script src="./src/js/emailBtnHandler.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script> -->
-    <!-- <script>
+  <script src="./src/js/jquery-3.7.1.slim.js"></script>
+  <script src="./src/js/stickyHeader.js"></script>
+  <script src="./src/js/mobileMenuTrigger.js"></script>
+  <script src="./src/js/emailBtnHandler.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script> -->
+  <!-- <script>
       const animContainer = document.getElementById("anim-container");
       var animItem = bodymovin.loadAnimation({
         wrapper: animContainer,
@@ -297,5 +278,6 @@
         path: "hero.json",
       });
     </script> -->
-  </body>
+</body>
+
 </html>
