@@ -6,3 +6,4 @@
 - Pogledaj kako bi mogao da uradis i stilizujes validaciju forme na frontu
 - Proveri za visinu team sekcije tako da se pozadinska slika vidi cela
 - Prilikom scroll-a smanjiti visinu header-a i velicinu logoa
+- Footer (proveri da li mozes da sredis width border-a)

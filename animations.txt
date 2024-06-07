@@ -1,0 +1,10 @@
+1. Header
+logo - zoom in animacija na page reload
+linkovi - padaju jedan za drugim povezano; boja na hover efektu ide sa leva na desno
+
+2. Hero
+title (padanje reci od gore ka dole i pojavljivanje sekcije s leva na desno) i button (s leva na desno) ulaze prvi
+pretitle i paragraf se pojavljuju na istoj poziciji s leva na desno, zoom in efekat na recima
+
+3. About Us 
+na scroll, na kliktanje na link i na reload: 

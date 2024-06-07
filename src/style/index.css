@@ -94,11 +94,10 @@ a {
   font-size: 16px;
   color: #e8f0fd;
   line-height: 1.5em;
+  transition: 0.3s ease;
 }
 .header .container .header__nav ul li a:hover {
   color: #4353ff;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.2);
-  text-shadow: 0, 4px, 4px, rgba(0, 0, 0, 0.25);
 }
 .header .container .mobile-menu {
   display: none;
@@ -247,7 +246,7 @@ a {
   line-height: 1.6em;
   margin-bottom: 18px;
 }
-.hero .container .hero__content .content__title {
+.hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 56px;
   color: #fff;
@@ -255,7 +254,7 @@ a {
   text-transform: capitalize;
   margin-bottom: 37px;
 }
-.hero .container .hero__content .content__text {
+.hero .container .hero__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -279,10 +278,10 @@ a {
     width: 100%;
     margin: 0;
   }
-  .hero .container .hero__content .content__title {
+  .hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
     font-size: 50px;
   }
-  .hero .container .hero__content .content__text {
+  .hero .container .hero__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
     width: 100%;
   }
 }
@@ -298,7 +297,7 @@ a {
   .hero .container .hero__content .content__pretitle {
     font-size: 18px;
   }
-  .hero .container .hero__content .content__title {
+  .hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
     font-size: 46px;
   }
 }
@@ -306,7 +305,7 @@ a {
   .hero .container .hero__content {
     padding-top: 100px;
   }
-  .hero .container .hero__content .content__title {
+  .hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
     font-size: 40px;
   }
 }
@@ -342,14 +341,14 @@ a {
   line-height: 1.5em;
   margin-bottom: 16px;
 }
-.about-us .container .about-us__card .card__content .content__title {
+.about-us .container .about-us__card .card__content .content__title, .about-us .footer .container .about-us__card .card__content .container__lower-section .lower-section__content .content__text, .about-us .footer .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .footer .about-us .container .about-us__card .card__content .container__lower-section .lower-section__content .content__text, .footer .about-us .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .about-us .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .about-us .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright, .footer .about-us .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .about-us .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
   line-height: 1.375em;
   margin-bottom: 30px;
 }
-.about-us .container .about-us__card .card__content .content__text {
+.about-us .container .about-us__card .card__content .content__text, .about-us .footer .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .footer .about-us .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .about-us .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright, .footer .about-us .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -424,14 +423,14 @@ a {
   line-height: 2em;
   margin-bottom: 6px;
 }
-.our-approach .container .container__upper-section .upper-section__content .content__title {
+.our-approach .container .container__upper-section .upper-section__content .content__title, .our-approach .footer .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__text, .our-approach .footer .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__text, .footer .our-approach .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .our-approach .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .our-approach .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .footer .our-approach .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
   line-height: 1.375em;
   margin-bottom: 26px;
 }
-.our-approach .container .container__upper-section .upper-section__content .content__text {
+.our-approach .container .container__upper-section .upper-section__content .content__text, .our-approach .footer .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .our-approach .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -451,7 +450,7 @@ a {
   padding-top: 26px;
   padding-left: 2px;
 }
-.our-approach .container .container__lower-section .lower-section__content .content__title {
+.our-approach .container .container__lower-section .lower-section__content .content__title, .our-approach .footer .container .container__lower-section .lower-section__content .content__text, .our-approach .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .content__text, .footer .our-approach .container .container__lower-section .lower-section__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
@@ -459,7 +458,7 @@ a {
   color: #fff;
   margin-bottom: 26px;
 }
-.our-approach .container .container__lower-section .lower-section__content .content__text {
+.our-approach .container .container__lower-section .lower-section__content .content__text, .our-approach .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -488,7 +487,7 @@ a {
   color: #fff;
   margin-bottom: 9px;
 }
-.team .container .container__content .content__title {
+.team .container .container__content .content__title, .team .footer .container .container__content .container__lower-section .lower-section__content .content__text, .team .footer .container .container__content .container__lower-section .lower-section__content .content__copyright, .footer .team .container .container__content .container__lower-section .lower-section__content .content__text, .footer .team .container .container__content .container__lower-section .lower-section__content .content__copyright, .team .footer .container .container__lower-section .lower-section__content .container__content .content__text, .team .footer .container .container__lower-section .lower-section__content .container__content .content__copyright, .footer .team .container .container__lower-section .lower-section__content .container__content .content__text, .footer .team .container .container__lower-section .lower-section__content .container__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 48px;
   line-height: 1.33em;
@@ -550,14 +549,14 @@ a {
   color: #151f5a;
   margin-bottom: 9px;
 }
-.contact .container .container__content .content__title {
+.contact .container .container__content .content__title, .contact .footer .container .container__content .container__lower-section .lower-section__content .content__text, .contact .footer .container .container__content .container__lower-section .lower-section__content .content__copyright, .footer .contact .container .container__content .container__lower-section .lower-section__content .content__text, .footer .contact .container .container__content .container__lower-section .lower-section__content .content__copyright, .contact .footer .container .container__lower-section .lower-section__content .container__content .content__text, .contact .footer .container .container__lower-section .lower-section__content .container__content .content__copyright, .footer .contact .container .container__lower-section .lower-section__content .container__content .content__text, .footer .contact .container .container__lower-section .lower-section__content .container__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 48px;
   line-height: 1.33em;
   color: #151f5a;
   margin-bottom: 30px;
 }
-.contact .container .container__content .content__text {
+.contact .container .container__content .content__text, .contact .footer .container .container__content .container__lower-section .lower-section__content .content__copyright, .footer .contact .container .container__content .container__lower-section .lower-section__content .content__copyright, .contact .footer .container .container__lower-section .lower-section__content .container__content .content__copyright, .footer .contact .container .container__lower-section .lower-section__content .container__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -672,7 +671,78 @@ a {
 }
 
 .footer {
-  height: 470px;
+  min-height: 470px;
   background-color: #151f5a;
   border-radius: 64px 64px 0 0;
+}
+.footer .container {
+  padding-top: 33px;
+}
+.footer .container .container__upper-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 118px;
+  margin-bottom: 15px;
+}
+.footer .container .container__upper-section .upper-section__logo {
+  margin-left: -10px;
+}
+.footer .container .container__upper-section .upper-section__nav ul {
+  display: flex;
+  justify-content: space-between;
+  width: 533px;
+}
+.footer .container .container__upper-section .upper-section__nav ul li a:link,
+.footer .container .container__upper-section .upper-section__nav ul li a:visited,
+.footer .container .container__upper-section .upper-section__nav ul li a:hover,
+.footer .container .container__upper-section .upper-section__nav ul li a:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e8f0fd;
+  line-height: 1.5em;
+  transition: 0.3s ease;
+}
+.footer .container .container__upper-section .upper-section__nav ul li a:hover {
+  color: #4353ff;
+}
+.footer .container .container__upper-section .upper-section__icon {
+  margin-right: -25px;
+}
+.footer .container .container__lower-section {
+  border-top: 1px solid #fff;
+  padding-top: 24px;
+  padding-left: 14px;
+}
+.footer .container .container__lower-section .lower-section__content {
+  width: 1024px;
+  text-align: center;
+  margin: 0 auto;
+}
+.footer .container .container__lower-section .lower-section__content .content__title, .footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5em;
+  margin-bottom: 9px;
+}
+.footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+  font-weight: 500;
+  margin-bottom: 38px;
+}
+.footer .container .container__lower-section .lower-section__content .content__copyright a:link,
+.footer .container .container__lower-section .lower-section__content .content__copyright a:visited,
+.footer .container .container__lower-section .lower-section__content .content__copyright a:hover,
+.footer .container .container__lower-section .lower-section__content .content__copyright a:active {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #e8f0fd;
+  line-height: 1.5em;
+  transition: 0.3s ease;
+}
+.footer .container .container__lower-section .lower-section__content .content__copyright a:hover {
+  color: #4353ff;
 }/*# sourceMappingURL=index.css.map */

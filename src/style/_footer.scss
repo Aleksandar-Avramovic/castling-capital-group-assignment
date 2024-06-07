@@ -1,29 +1,82 @@
 .footer {
-  height: 470px;
+  min-height: 470px;
   background-color: $text-blue;
   border-radius: 64px 64px 0 0;
   .container {
+    padding-top: 33px;
     .container__upper-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 118px;
+      margin-bottom: 15px;
       .upper-section__logo {
+        margin-left: -10px;
       }
       .upper-section__nav {
         ul {
+          display: flex;
+          justify-content: space-between;
+          width: 533px;
           li {
-            a {
+            a:link,
+            a:visited,
+            a:hover,
+            a:active {
+              font-family: "Bw Modelica SS01", sans-serif;
+              font-weight: 500;
+              font-size: 16px;
+              color: $link-white;
+              line-height: 1.5em;
+              transition: 0.3s ease;
+            }
+            a:hover {
+              color: $accent-blue;
             }
           }
         }
       }
       .upper-section__icon {
+        margin-right: -25px;
       }
     }
     .container__lower-section {
+      border-top: 1px solid $primary-white;
+      padding-top: 24px;
+      padding-left: 14px;
       .lower-section__content {
+        width: 1024px;
+        text-align: center;
+        margin: 0 auto;
         .content__title {
+          font-family: "Bw Modelica SS01", sans-serif;
+          font-weight: 600;
+          font-size: 16px;
+          color: $primary-white;
+          line-height: 1.5em;
+          margin-bottom: 9px;
         }
         .content__text {
+          @extend .content__title;
+          font-weight: 500;
+          margin-bottom: 38px;
         }
         .content__copyright {
+          @extend .content__text;
+          a:link,
+          a:visited,
+          a:hover,
+          a:active {
+            font-family: "Bw Modelica SS01", sans-serif;
+            font-weight: 500;
+            font-size: 16px;
+            color: $link-white;
+            line-height: 1.5em;
+            transition: 0.3s ease;
+          }
+          a:hover {
+            color: $accent-blue;
+          }
         }
       }
     }
