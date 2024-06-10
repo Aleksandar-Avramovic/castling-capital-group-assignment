@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (targetElement) {
         // Smooth scroll to the target element
         window.scrollTo({
-          top: targetElement.offsetTop - 86,
+          top: targetElement.offsetTop - 56,
           behavior: "smooth",
         });
       }
