@@ -1,22 +1,24 @@
 .sidebar {
   position: fixed;
   right: 0;
-  top: 86px;
+  top: 0;
   margin-right: 0;
   display: none;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   z-index: 1000;
-  background-color: $primary-blue;
-  height: 80%;
-  max-width: 60%;
+  background-color: $text-blue;
+  height: 100%;
+  width: 30%;
   border-radius: 0 0 0 15%;
 
   ul {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding-top: 150px;
+    padding-left: 20px;
+    // justify-content: center;
+    // align-items: center;
     li {
       margin-bottom: 50px;
 
@@ -52,7 +54,6 @@
 
 @include breakpoint(md) {
   .sidebar {
-    height: 70%;
     ul {
       li {
         margin-bottom: 40px;
@@ -66,7 +67,6 @@
 
 @include breakpoint(sm) {
   .sidebar {
-    height: 60%;
     ul {
       li {
         margin-bottom: 40px;

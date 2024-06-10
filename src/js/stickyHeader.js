@@ -3,7 +3,7 @@ const headerLogo = document.querySelector(".header__logo");
 const links = document.querySelectorAll(".header__nav ul li");
 
 window.addEventListener("load", function () {
-  if (!header.classList.contains("header-sticky")) {
+  if (!header.classList.contains("header--sticky")) {
     startAnimations();
   }
 });
