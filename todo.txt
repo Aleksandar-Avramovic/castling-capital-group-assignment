@@ -1,9 +1,7 @@
-- promeni hover na linkovima + odradi redirekciju linkova na odgovarajucu sekciju
 - Odradi responsive za sve sekcije
 - Ostale su ti animacije
 - Lepse organizuj js fajlove tako da u HTML ukljucis samo jedan poziv
 - Iscackaj kako bi mogao da koristis @extend u Sass-u da ne bi ponavljao kod bazicne stilizacije
 - Pogledaj kako bi mogao da uradis i stilizujes validaciju forme na frontu
 - Proveri za visinu team sekcije tako da se pozadinska slika vidi cela
-- Prilikom scroll-a smanjiti visinu header-a i velicinu logoa
 - Footer (proveri da li mozes da sredis width border-a)
