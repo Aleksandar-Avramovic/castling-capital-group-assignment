@@ -90,14 +90,22 @@ a {
 .header .container .header__nav ul li a:visited,
 .header .container .header__nav ul li a:hover,
 .header .container .header__nav ul li a:active {
+  position: relative;
+  display: inline-block;
   font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
   font-size: 16px;
   color: #e8f0fd;
   line-height: 1.5em;
-  transition: 0.3s ease;
+  background-image: linear-gradient(to right, #e8f0fd 50%, #4353ff 50%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s;
 }
 .header .container .header__nav ul li a:hover {
-  color: #4353ff;
+  background-position: -100% 0;
 }
 .header .container .mobile-menu {
   display: none;

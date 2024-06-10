@@ -25,14 +25,27 @@
           a:visited,
           a:hover,
           a:active {
+            position: relative;
+            display: inline-block;
             font-family: "Bw Modelica SS01", sans-serif;
+            font-weight: 600;
             font-size: 16px;
             color: $link-white;
             line-height: 1.5em;
-            transition: 0.3s ease;
+            background-image: linear-gradient(
+              to right,
+              $link-white 50%,
+              $accent-blue 50%
+            );
+            background-size: 200% 100%;
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: background-position 0.5s;
           }
+
           a:hover {
-            color: $accent-blue;
+            background-position: -100% 0;
           }
         }
       }
