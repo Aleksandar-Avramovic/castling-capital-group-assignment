@@ -213,11 +213,11 @@
     .container {
       .header__container {
         .header__nav {
+          display: none;
           position: fixed;
           right: 0;
           top: 0;
           margin-right: 0;
-          display: none;
           justify-content: start;
           align-items: start;
           z-index: 10000;

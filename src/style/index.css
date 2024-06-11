@@ -229,11 +229,11 @@ a {
 }
 @media (max-width: 1200px) {
   .header .container .header__container .header__nav {
+    display: none;
     position: fixed;
     right: 0;
     top: 0;
     margin-right: 0;
-    display: none;
     justify-content: start;
     align-items: start;
     z-index: 10000;
@@ -288,48 +288,72 @@ a {
 }
 .hero .container {
   height: 100%;
+}
+.hero .container .hero__container {
+  height: 100%;
   display: flex;
 }
-.hero .container .hero__content {
+.hero .container .hero__container .hero__content {
   width: 757px;
   padding-top: 179px;
   margin-left: -5px;
 }
-.hero .container .hero__content .content__pretitle {
+.hero .container .hero__container .hero__content .content__pretitle {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: #fff;
   line-height: 1.6em;
   margin-bottom: 18px;
+  opacity: 0;
+  animation: slideIn 2s ease forwards;
+  animation-delay: 2s;
 }
-.hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
+.hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 56px;
   color: #fff;
   line-height: 1.1em;
   text-transform: capitalize;
   margin-bottom: 37px;
+  opacity: 0;
+  animation: slideIn 2s ease forwards;
 }
-.hero .container .hero__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
+.hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.8em;
   color: #fff;
   width: 714px;
+  opacity: 0;
+  animation: slideIn 2s ease forwards;
+  animation-delay: 2s;
 }
-.hero .container .hero__content .content__text--upper {
+.hero .container .hero__container .hero__content .content__text--upper {
   margin-bottom: 14px;
 }
-.hero .container .hero__content .content__text--lower {
+.hero .container .hero__container .hero__content .content__text--lower {
   margin-bottom: 34px;
 }
-.hero .container .hero__content .hero__btn {
+.hero .container .hero__container .hero__content .hero__btn {
   padding: 16px 40px 16px 40px;
   letter-spacing: 0.3px;
+  opacity: 0;
+  animation: slideIn 2s ease forwards;
+  animation-delay: 1s;
 }
 
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 @media (max-width: 1200px) {
   .hero .container .hero__content {
     margin: 0;
