@@ -1,14 +1,11 @@
 .hero {
   height: 812px;
   background: linear-gradient(
-      90deg,
-      rgba(8, 0, 133, 1),
-      80%,
-      rgba(8, 0, 133, 0)
-    ),
-    url("../../assets/images/hero.png");
-  background-repeat: no-repeat;
-  background-position: right;
+    90deg,
+    rgba(8, 0, 133, 1),
+    80%,
+    rgba(8, 0, 133, 0)
+  );
   .container {
     height: 100%;
     display: flex;

@@ -284,9 +284,7 @@ a {
 }
 .hero {
   height: 812px;
-  background: linear-gradient(90deg, rgb(8, 0, 133), 80%, rgba(8, 0, 133, 0)), url("../../assets/images/hero.png");
-  background-repeat: no-repeat;
-  background-position: right;
+  background: linear-gradient(90deg, rgb(8, 0, 133), 80%, rgba(8, 0, 133, 0));
 }
 .hero .container {
   height: 100%;
