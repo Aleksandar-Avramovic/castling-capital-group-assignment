@@ -1,5 +1,5 @@
 .hero {
-  height: 812px;
+  min-height: 812px;
   background: linear-gradient(
     90deg,
     rgba(8, 0, 133, 1),
@@ -82,13 +82,16 @@
 @include breakpoint(xl) {
   .hero {
     .container {
-      .hero__content {
-        margin: 0;
-        .content__title {
-          font-size: 50px;
-        }
-        .content__text {
+      .hero__container {
+        .hero__content {
           width: 100%;
+          margin: 0;
+          .content__title {
+            font-size: 50px;
+          }
+          .content__text {
+            width: 100%;
+          }
         }
       }
     }
@@ -98,8 +101,17 @@
 @include breakpoint(lg) {
   .hero {
     .container {
-      .hero__content {
-        text-align: center;
+      .hero__container {
+        flex-direction: column;
+
+        .hero__content {
+          width: 100%;
+          text-align: center;
+          padding-top: 70px;
+          .content__title {
+            font-size: 46px;
+          }
+        }
       }
     }
   }
@@ -115,6 +127,26 @@
         }
         .content__title {
           font-size: 46px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    .container {
+      .hero__container {
+        .hero__content {
+          .content__pretitle,
+          .content__title,
+          .content__text {
+            animation: none;
+            opacity: 1;
+          }
+          .hero__btn {
+            animation-delay: 0s;
+          }
         }
       }
     }
