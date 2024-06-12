@@ -118,6 +118,29 @@
   }
 }
 
+.header.header--sticky {
+  .container {
+    .header__container {
+      .header__logo-wrapper {
+        a {
+          .header__logo {
+            animation: none;
+          }
+        }
+      }
+      .header__nav {
+        ul {
+          li {
+            animation: none;
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      }
+    }
+  }
+}
+
 .header {
   .container {
     .header__container {

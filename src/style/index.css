@@ -3,6 +3,7 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 *,
@@ -165,6 +166,15 @@ a {
 .header .container .header__container .mobile-menu .bar:nth-child(3) {
   width: 60%;
   margin-left: 12px;
+}
+
+.header.header--sticky .container .header__container .header__logo-wrapper a .header__logo {
+  animation: none;
+}
+.header.header--sticky .container .header__container .header__nav ul li {
+  animation: none;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .header .container .header__container .mobile-menu--open .mobile-menu--toggle {
@@ -342,6 +352,9 @@ a {
   opacity: 0;
   animation: slideIn 2s ease forwards;
   animation-delay: 1s;
+}
+.hero .container .hero__container .animation {
+  padding-top: 179px;
 }
 
 @keyframes slideIn {
