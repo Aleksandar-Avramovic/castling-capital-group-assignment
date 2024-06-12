@@ -24,7 +24,7 @@
           line-height: 1.6em;
           margin-bottom: 18px;
           opacity: 0;
-          animation: slideIn 2s ease forwards;
+          animation: reveal 2s ease forwards;
           animation-delay: 2s;
         }
         .content__title {
@@ -35,7 +35,7 @@
           text-transform: capitalize;
           margin-bottom: 37px;
           opacity: 0;
-          animation: slideIn 2s ease forwards;
+          animation: reveal 2s ease forwards;
         }
         .content__text {
           font-family: "Bw Modelica SS01", sans-serif;
@@ -45,7 +45,7 @@
           color: $primary-white;
           width: 714px;
           opacity: 0;
-          animation: slideIn 2s ease forwards;
+          animation: reveal 2s ease forwards;
           animation-delay: 2s;
         }
         .content__text--upper {
@@ -77,6 +77,17 @@
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  from {
+    opacity: 1;
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
     opacity: 1;
   }
 }

@@ -337,7 +337,7 @@ a {
   line-height: 1.6em;
   margin-bottom: 18px;
   opacity: 0;
-  animation: slideIn 2s ease forwards;
+  animation: reveal 2s ease forwards;
   animation-delay: 2s;
 }
 .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
@@ -348,7 +348,7 @@ a {
   text-transform: capitalize;
   margin-bottom: 37px;
   opacity: 0;
-  animation: slideIn 2s ease forwards;
+  animation: reveal 2s ease forwards;
 }
 .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
@@ -358,7 +358,7 @@ a {
   color: #fff;
   width: 714px;
   opacity: 0;
-  animation: slideIn 2s ease forwards;
+  animation: reveal 2s ease forwards;
   animation-delay: 2s;
 }
 .hero .container .hero__container .hero__content .content__text--upper {
@@ -385,6 +385,18 @@ a {
   }
   100% {
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes reveal {
+  from {
+    opacity: 1;
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  to {
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
     opacity: 1;
   }
 }
