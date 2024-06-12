@@ -1,10 +1,12 @@
 .hero {
+  position: relative;
   min-height: 812px;
+
   background: linear-gradient(
     90deg,
     rgba(8, 0, 133, 1),
     80%,
-    rgba(8, 0, 133, 0)
+    rgba(232, 240, 253, 1)
   );
   .container {
     height: 100%;
@@ -16,6 +18,7 @@
         width: 757px;
         padding-top: 179px;
         margin-left: -5px;
+        z-index: 2;
         .content__pretitle {
           font-family: "Bw Modelica SS01", sans-serif;
           font-weight: 500;
@@ -63,7 +66,11 @@
         }
       }
       .animation {
-        padding-top: 179px;
+        position: absolute;
+        top: 25px;
+        right: 0;
+        z-index: 0;
+        opacity: 0.4;
       }
     }
   }
@@ -93,19 +100,46 @@
 }
 
 // Responsive
+@media (max-width: 1750px) {
+  .hero {
+    .container {
+      .hero__container {
+        .animation {
+          // position: relative;
+        }
+      }
+    }
+  }
+}
+
+@include breakpoint(xxl) {
+  .hero {
+    .container {
+      .hero__container {
+        .hero__content {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
 @include breakpoint(xl) {
   .hero {
     .container {
       .hero__container {
         .hero__content {
-          width: 100%;
-          margin: 0;
+          padding-top: 30px;
           .content__title {
             font-size: 50px;
           }
-          .content__text {
-            width: 100%;
-          }
+        }
+        .animation {
+          padding-top: 330px;
+          width: 650px;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          transform: scale(1);
         }
       }
     }
@@ -116,15 +150,28 @@
   .hero {
     .container {
       .hero__container {
+        display: flex;
         flex-direction: column;
-
         .hero__content {
           width: 100%;
           text-align: center;
-          padding-top: 70px;
+          .content__pretitle {
+            width: 100%;
+          }
           .content__title {
             font-size: 46px;
+            width: 100%;
           }
+          .content__text {
+            width: 100%;
+          }
+        }
+        .animation {
+          padding-top: 0;
+          position: relative;
+          align-self: center;
+          width: 80%;
+          transform: scale(1);
         }
       }
     }
@@ -134,13 +181,18 @@
 @include breakpoint(md) {
   .hero {
     .container {
-      .hero__content {
-        padding-top: 120px;
-        .content__pretitle {
-          font-size: 18px;
-        }
-        .content__title {
-          font-size: 46px;
+      .hero__container {
+        .hero__content {
+          .content__pretitle {
+            font-size: 18px;
+          }
+          .content__title {
+            font-size: 40px;
+          }
+          .hero__btn {
+            font-size: 14px;
+            padding: 15px 30px;
+          }
         }
       }
     }
@@ -170,10 +222,12 @@
 @include breakpoint(sm) {
   .hero {
     .container {
-      .hero__content {
-        padding-top: 100px;
-        .content__title {
-          font-size: 40px;
+      .hero__container {
+        padding: 0 20px;
+        .hero__content {
+          .content__title {
+            font-size: 36px;
+          }
         }
       }
     }

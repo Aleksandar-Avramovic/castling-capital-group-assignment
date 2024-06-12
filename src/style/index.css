@@ -110,7 +110,7 @@ a {
   display: flex;
   align-items: center;
   gap: 80px;
-  margin-right: -15px;
+  margin-right: -18px;
 }
 .header .container .header__container .header__nav ul li {
   opacity: 0;
@@ -246,12 +246,16 @@ a {
     opacity: 1;
   }
 }
+@media (max-width: 1750px) {
+  .header .container .header__container .header__nav ul {
+    margin-right: 0;
+  }
+}
 @media (max-width: 1400px) {
   .header .container .header__container .header__logo-wrapper {
     margin-left: 0;
   }
   .header .container .header__container .header__nav ul {
-    margin-right: 0px;
     gap: 70px;
   }
 }
@@ -314,8 +318,9 @@ a {
   }
 }
 .hero {
+  position: relative;
   min-height: 812px;
-  background: linear-gradient(90deg, rgb(8, 0, 133), 80%, rgba(8, 0, 133, 0));
+  background: linear-gradient(90deg, rgb(8, 0, 133), 80%, rgb(232, 240, 253));
 }
 .hero .container {
   height: 100%;
@@ -328,6 +333,7 @@ a {
   width: 757px;
   padding-top: 179px;
   margin-left: -5px;
+  z-index: 2;
 }
 .hero .container .hero__container .hero__content .content__pretitle {
   font-family: "Bw Modelica SS01", sans-serif;
@@ -375,7 +381,11 @@ a {
   animation-delay: 1s;
 }
 .hero .container .hero__container .animation {
-  padding-top: 179px;
+  position: absolute;
+  top: 25px;
+  right: 0;
+  z-index: 0;
+  opacity: 0.4;
 }
 
 @keyframes slideIn {
@@ -400,40 +410,64 @@ a {
     opacity: 1;
   }
 }
+@media (max-width: 1400px) {
+  .hero .container .hero__container .hero__content {
+    margin: 0;
+  }
+}
 @media (max-width: 1200px) {
   .hero .container .hero__container .hero__content {
-    width: 100%;
-    margin: 0;
+    padding-top: 30px;
   }
   .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
     font-size: 50px;
   }
-  .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
-    width: 100%;
+  .hero .container .hero__container .animation {
+    padding-top: 330px;
+    width: 650px;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    transform: scale(1);
   }
 }
 @media (max-width: 992px) {
   .hero .container .hero__container {
+    display: flex;
     flex-direction: column;
   }
   .hero .container .hero__container .hero__content {
     width: 100%;
     text-align: center;
-    padding-top: 70px;
+  }
+  .hero .container .hero__container .hero__content .content__pretitle {
+    width: 100%;
   }
   .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
     font-size: 46px;
+    width: 100%;
+  }
+  .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+    width: 100%;
+  }
+  .hero .container .hero__container .animation {
+    padding-top: 0;
+    position: relative;
+    align-self: center;
+    width: 80%;
+    transform: scale(1);
   }
 }
 @media (max-width: 768px) {
-  .hero .container .hero__content {
-    padding-top: 120px;
-  }
-  .hero .container .hero__content .content__pretitle {
+  .hero .container .hero__container .hero__content .content__pretitle {
     font-size: 18px;
   }
-  .hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
-    font-size: 46px;
+  .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+    font-size: 40px;
+  }
+  .hero .container .hero__container .hero__content .hero__btn {
+    font-size: 14px;
+    padding: 15px 30px;
   }
 }
 @media (max-width: 600px) {
@@ -452,11 +486,11 @@ a {
   }
 }
 @media (max-width: 576px) {
-  .hero .container .hero__content {
-    padding-top: 100px;
+  .hero .container .hero__container {
+    padding: 0 20px;
   }
-  .hero .container .hero__content .content__title, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__content .content__copyright {
-    font-size: 40px;
+  .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+    font-size: 36px;
   }
 }
 .about-us {
