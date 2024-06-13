@@ -586,7 +586,6 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;
 }
 
 .about__wrapper::before {
@@ -599,6 +598,10 @@ a {
   width: 33.65%;
   height: 672px;
   background-color: #151f5a;
+}
+
+.animate-about.animate {
+  animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;
 }
 
 @keyframes moveRight {

@@ -60,7 +60,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;
 }
 
 .about__wrapper::before {
@@ -76,6 +75,10 @@
 }
 
 // Animations
+
+.animate-about.animate {
+  animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;
+}
 
 @keyframes moveRight {
   0% {
