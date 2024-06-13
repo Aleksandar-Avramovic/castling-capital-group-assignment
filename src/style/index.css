@@ -529,7 +529,7 @@ a {
 }
 .about-us {
   position: relative;
-  height: 672px;
+  min-height: 672px;
   background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
   padding-top: 77px;
   padding-left: 41px;
@@ -600,6 +600,74 @@ a {
   background-color: #151f5a;
 }
 
+@media (max-width: 1550px) {
+  .about-us__card {
+    margin-left: -30px;
+  }
+}
+@media (max-width: 1200px) {
+  .about-us {
+    padding-left: 0;
+  }
+  .about__wrapper::before {
+    display: none;
+  }
+  .about__wrapper {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .about-us__card {
+    margin-left: 0;
+    padding: 60px;
+    max-width: 600px;
+  }
+  .about-us__card .card__content {
+    width: 100%;
+  }
+  .about-us__img-wrapper {
+    order: -1;
+    width: 200px;
+    height: 200px;
+  }
+  .about-us__img {
+    max-width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .about-us {
+    padding-top: 50px;
+  }
+  .about-us__card {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .about-us__card {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+  }
+  .about-us__card .card__content .content__title, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+    font-size: 24px;
+  }
+  .about-us__card .card__content .content__pretitle,
+  .about-us__card .card__content .content__text,
+  .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright,
+  .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .about__wrapper {
+    padding: 0 20px;
+  }
+  .about-us__img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+}
 .our-approach {
   display: flex;
   align-items: center;
