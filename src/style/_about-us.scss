@@ -4,72 +4,72 @@
   background: linear-gradient(to bottom, #fef4f2, #e8f0fd);
   padding-top: 77px;
   padding-left: 41px;
-  .container {
-    height: 518.4px;
-    display: flex;
-    justify-content: space-between;
-    .about-us__card {
-      width: 760.32px;
-      height: 518.4px;
-      background-color: $primary-white;
-      z-index: 2;
-      padding: 74px 0 0 60px;
-      box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
-      margin-left: -84px;
-      .card__content {
-        width: 640px;
-        .content__pretitle {
-          font-family: "Bw Modelica SS01";
-          font-weight: 600;
-          font-size: 16px;
-          color: $text-blue;
-          line-height: 1.5em;
-          margin-bottom: 16px;
-        }
-        .content__title {
-          font-family: "Blacker Display";
-          font-size: 32px;
-          color: $text-blue;
-          line-height: 1.375em;
-          margin-bottom: 30px;
-        }
-        .content__text {
-          font-family: "Bw Modelica SS01";
-          font-weight: 500;
-          font-size: 16px;
-          color: $text-blue;
-          line-height: 1.5em;
-        }
-      }
+}
+
+.about__wrapper {
+  height: 518.4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us__card {
+  width: 760.32px;
+  height: 518.4px;
+  background-color: $primary-white;
+  z-index: 2;
+  padding: 74px 0 0 60px;
+  box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
+  margin-left: -84px;
+  .card__content {
+    width: 640px;
+    .content__pretitle {
+      font-family: "Bw Modelica SS01";
+      font-weight: 600;
+      font-size: 16px;
+      color: $text-blue;
+      line-height: 1.5em;
+      margin-bottom: 16px;
     }
-    .about-us__img-wrapper {
-      align-self: center;
-      width: 340.06px;
-      height: 340.06px;
-      border-radius: 163.95px 163.95px 0 0;
-      background: linear-gradient(
-        135deg,
-        rgba(27, 39, 113, 1),
-        rgba(51, 74, 215, 1)
-      );
-      box-shadow: 0 0 40.99px rgba(67, 83, 255, 0.5);
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .content__title {
+      font-family: "Blacker Display";
+      font-size: 32px;
+      color: $text-blue;
+      line-height: 1.375em;
+      margin-bottom: 30px;
+    }
+    .content__text {
+      font-family: "Bw Modelica SS01";
+      font-weight: 500;
+      font-size: 16px;
+      color: $text-blue;
+      line-height: 1.5em;
     }
   }
 }
+.about-us__img-wrapper {
+  align-self: center;
+  width: 340.06px;
+  height: 340.06px;
+  border-radius: 163.95px 163.95px 0 0;
+  background: linear-gradient(
+    135deg,
+    rgba(27, 39, 113, 1),
+    rgba(51, 74, 215, 1)
+  );
+  box-shadow: 0 0 40.99px rgba(67, 83, 255, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.about-us {
-  .container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: inline-block;
-    width: 640px;
-    height: 672px;
-    background-color: $text-blue;
-  }
+.about__wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: inline-block;
+  width: 33.65%;
+  height: 672px;
+  background-color: $text-blue;
 }

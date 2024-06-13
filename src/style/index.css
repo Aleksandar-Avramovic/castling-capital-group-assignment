@@ -534,12 +534,14 @@ a {
   padding-top: 77px;
   padding-left: 41px;
 }
-.about-us .container {
+
+.about__wrapper {
   height: 518.4px;
   display: flex;
   justify-content: space-between;
 }
-.about-us .container .about-us__card {
+
+.about-us__card {
   width: 760.32px;
   height: 518.4px;
   background-color: #fff;
@@ -548,10 +550,10 @@ a {
   box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
   margin-left: -84px;
 }
-.about-us .container .about-us__card .card__content {
+.about-us__card .card__content {
   width: 640px;
 }
-.about-us .container .about-us__card .card__content .content__pretitle {
+.about-us__card .card__content .content__pretitle {
   font-family: "Bw Modelica SS01";
   font-weight: 600;
   font-size: 16px;
@@ -559,21 +561,22 @@ a {
   line-height: 1.5em;
   margin-bottom: 16px;
 }
-.about-us .container .about-us__card .card__content .content__title, .about-us .footer .container .about-us__card .card__content .container__lower-section .lower-section__content .content__text, .about-us .footer .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .footer .about-us .container .about-us__card .card__content .container__lower-section .lower-section__content .content__text, .footer .about-us .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .about-us .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .about-us .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright, .footer .about-us .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .about-us .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+.about-us__card .card__content .content__title, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
   line-height: 1.375em;
   margin-bottom: 30px;
 }
-.about-us .container .about-us__card .card__content .content__text, .about-us .footer .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .footer .about-us .container .about-us__card .card__content .container__lower-section .lower-section__content .content__copyright, .about-us .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright, .footer .about-us .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+.about-us__card .card__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
   color: #151f5a;
   line-height: 1.5em;
 }
-.about-us .container .about-us__img-wrapper {
+
+.about-us__img-wrapper {
   align-self: center;
   width: 340.06px;
   height: 340.06px;
@@ -585,14 +588,14 @@ a {
   justify-content: center;
 }
 
-.about-us .container::before {
+.about__wrapper::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
   display: inline-block;
-  width: 640px;
+  width: 33.65%;
   height: 672px;
   background-color: #151f5a;
 }
