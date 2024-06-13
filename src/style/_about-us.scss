@@ -102,6 +102,7 @@
   }
 }
 
+// Responsive
 @media (max-width: 1550px) {
   .about-us__card {
     margin-left: -30px;
@@ -166,7 +167,7 @@
 }
 
 @media (max-width: 600px) {
-  .about-us__img-wrapper {
+  .animate-about.animate {
     animation: none;
   }
 }

@@ -1,11 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".about-us"); // Add more sections as needed
+  const sections = document.querySelectorAll(".about-us, .our-approach"); // Add more sections as needed
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (window.innerWidth >= 600) {
-          const animatedBlock = entry.target.querySelector(".animate-about");
+          const animatedBlock = entry.target.querySelector(
+            ".animate-about, .animate-our-approach"
+          );
           if (entry.isIntersecting && animatedBlock) {
             animatedBlock.classList.add("animate");
 
@@ -35,7 +37,9 @@ document.addEventListener("DOMContentLoaded", () => {
       rect.right <= (window.innerWidth || document.documentElement.clientWidth);
 
     if (isInViewport) {
-      const animatedBlock = entry.target.querySelector(".animate-about");
+      const animatedBlock = entry.target.querySelector(
+        ".animate-about, .animate-our-approach"
+      );
       if (animatedBlock) {
         animatedBlock.classList.add("animate");
 

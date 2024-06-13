@@ -683,7 +683,7 @@ a {
   }
 }
 @media (max-width: 600px) {
-  .about-us__img-wrapper {
+  .animate-about.animate {
     animation: none;
   }
 }
@@ -781,6 +781,35 @@ a {
   font-size: 16px;
   color: #fff;
   line-height: 1.5em;
+}
+
+.animate-our-approach.animate {
+  animation: moveLeft 1s ease-in-out forwards, flash 1s linear forwards;
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes flash {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+@media (max-width: 600px) {
+  .animate-our-approach.animate {
+    animation: none;
+  }
 }
 .team {
   position: relative;
