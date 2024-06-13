@@ -320,22 +320,30 @@ a {
 .hero {
   position: relative;
   min-height: 812px;
-  background: linear-gradient(90deg, rgb(8, 0, 133), 80%, rgb(232, 240, 253));
 }
-.hero .container {
+
+.hero__overlay {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
+  background: linear-gradient(90deg, rgb(8, 0, 133) 35%, transparent 100%);
 }
-.hero .container .hero__container {
+
+.hero__container {
   height: 100%;
   display: flex;
 }
-.hero .container .hero__container .hero__content {
+
+.hero__content {
   width: 757px;
   padding-top: 179px;
   margin-left: -5px;
   z-index: 2;
 }
-.hero .container .hero__container .hero__content .content__pretitle {
+.hero__content .content__pretitle {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -346,7 +354,7 @@ a {
   animation: reveal 2s ease forwards;
   animation-delay: 2s;
 }
-.hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+.hero__content .content__title, .hero__content .footer .container .container__lower-section .lower-section__content .content__text, .hero__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 56px;
   color: #fff;
@@ -356,7 +364,7 @@ a {
   opacity: 0;
   animation: reveal 2s ease forwards;
 }
-.hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+.hero__content .content__text, .hero__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -367,25 +375,24 @@ a {
   animation: reveal 2s ease forwards;
   animation-delay: 2s;
 }
-.hero .container .hero__container .hero__content .content__text--upper {
+.hero__content .content__text--upper {
   margin-bottom: 14px;
 }
-.hero .container .hero__container .hero__content .content__text--lower {
+.hero__content .content__text--lower {
   margin-bottom: 34px;
 }
-.hero .container .hero__container .hero__content .hero__btn {
+.hero__content .hero__btn {
   padding: 16px 40px 16px 40px;
   letter-spacing: 0.3px;
   opacity: 0;
   animation: slideIn 2s ease forwards;
   animation-delay: 1s;
 }
-.hero .container .hero__container .animation {
+
+.animation {
   position: absolute;
-  top: 25px;
+  top: 0;
   right: 0;
-  z-index: 0;
-  opacity: 0.4;
 }
 
 @keyframes slideIn {
@@ -410,17 +417,40 @@ a {
     opacity: 1;
   }
 }
-@media (max-width: 1400px) {
-  .hero .container .hero__container .hero__content {
+@media (max-width: 1700px) {
+  .animation {
+    padding-top: 125px;
+    width: 900px;
+  }
+  .hero__content {
     margin: 0;
   }
 }
+@media (max-width: 1400px) {
+  .hero__content {
+    padding-top: 90px;
+  }
+  .animation {
+    width: 650px;
+    padding-top: 300px;
+  }
+  .hero__content .content__title, .hero__content .footer .container .container__lower-section .lower-section__content .content__text, .hero__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright {
+    font-size: 50px;
+  }
+}
 @media (max-width: 1200px) {
+  .hero {
+    background: #080085;
+  }
+  .hero .container .hero__overlay {
+    display: none;
+  }
   .hero .container .hero__container .hero__content {
     padding-top: 30px;
   }
   .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
-    font-size: 50px;
+    font-size: 46px;
+    margin-bottom: 30px;
   }
   .hero .container .hero__container .animation {
     padding-top: 330px;
@@ -444,11 +474,15 @@ a {
     width: 100%;
   }
   .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
-    font-size: 46px;
+    font-size: 40px;
     width: 100%;
+    margin-bottom: 20px;
   }
   .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
     width: 100%;
+  }
+  .hero .container .hero__container .hero__content .content__text--lower {
+    margin-bottom: 20px;
   }
   .hero .container .hero__container .animation {
     padding-top: 0;
@@ -490,7 +524,7 @@ a {
     padding: 0 20px;
   }
   .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
-    font-size: 36px;
+    font-size: 30px;
   }
 }
 .about-us {
