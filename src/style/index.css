@@ -123,15 +123,13 @@ a {
   background-image: linear-gradient(to right, #e8f0fd 50%, #4353ff 50%);
   background-size: 200% 100%;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   background-position: -100% 0;
   transition: background-position 0.5s;
 }
 .header .container .header__container .header__nav ul li a:link,
-.header .container .header__container .header__nav ul li a:visited,
-.header .container .header__container .header__nav ul li a:hover,
-.header .container .header__container .header__nav ul li a:active {
+.header .container .header__container .header__nav ul li a:visited {
   position: relative;
   display: inline-block;
   font-family: "Bw Modelica SS01", sans-serif;
@@ -142,7 +140,7 @@ a {
   background-image: linear-gradient(to right, #e8f0fd 50%, #4353ff 50%);
   background-size: 200% 100%;
   -webkit-background-clip: text;
-  background-clip: text;
+          background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: background-position 0.5s;
 }
@@ -1048,19 +1046,21 @@ a {
   }
 }
 .contact {
-  height: 750px;
+  min-height: 750px;
   background-color: #fff;
   padding-top: 98px;
   margin-left: -9px;
 }
-.contact .container {
+
+.contact__wrapper {
   display: flex;
   justify-content: space-between;
 }
-.contact .container .container__content {
+
+.content__container {
   width: 534px;
 }
-.contact .container .container__content .content__pretitle {
+.content__container .content__pretitle {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -1068,14 +1068,14 @@ a {
   color: #151f5a;
   margin-bottom: 9px;
 }
-.contact .container .container__content .content__title, .contact .footer .container .container__content .container__lower-section .lower-section__content .content__text, .contact .footer .container .container__content .container__lower-section .lower-section__content .content__copyright, .footer .contact .container .container__content .container__lower-section .lower-section__content .content__text, .footer .contact .container .container__content .container__lower-section .lower-section__content .content__copyright, .contact .footer .container .container__lower-section .lower-section__content .container__content .content__text, .contact .footer .container .container__lower-section .lower-section__content .container__content .content__copyright, .footer .contact .container .container__lower-section .lower-section__content .container__content .content__text, .footer .contact .container .container__lower-section .lower-section__content .container__content .content__copyright {
+.content__container .content__title, .content__container .footer .container .container__lower-section .lower-section__content .content__text, .content__container .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .content__container .content__text, .footer .container .container__lower-section .lower-section__content .content__container .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 48px;
   line-height: 1.33em;
   color: #151f5a;
   margin-bottom: 30px;
 }
-.contact .container .container__content .content__text, .contact .footer .container .container__content .container__lower-section .lower-section__content .content__copyright, .footer .contact .container .container__content .container__lower-section .lower-section__content .content__copyright, .contact .footer .container .container__lower-section .lower-section__content .container__content .content__copyright, .footer .contact .container .container__lower-section .lower-section__content .container__content .content__copyright {
+.content__container .content__text, .content__container .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .content__container .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1083,108 +1083,84 @@ a {
   color: #151f5a;
   margin-bottom: 32px;
 }
-.contact .container .container__content .content__info {
+.content__container .content__info {
   display: flex;
   flex-direction: column;
   gap: 12px;
 }
-.contact .container .container__content .content__info .info__address {
+.content__container .content__info a:link,
+.content__container .content__info a:visited {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5em;
+  color: #151f5a;
+  background-image: linear-gradient(to right, #151f5a 50%, #4353ff 50%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s;
+}
+.content__container .content__info a:hover {
+  background-position: -100% 0;
+}
+.content__container .content__info .info__address {
   display: flex;
   gap: 24px;
 }
-.contact .container .container__content .content__info .info__address .address__logo {
+.content__container .content__info .info__address .address__logo {
   width: 32px;
   height: 32px;
 }
-.contact .container .container__content .content__info .info__address .address__link:link,
-.contact .container .container__content .content__info .info__address .address__link:visited,
-.contact .container .container__content .content__info .info__address .address__link:hover,
-.contact .container .container__content .content__info .info__address .address__link:active {
-  font-family: "Bw Modelica SS01", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5em;
-  color: #151f5a;
-  transition: 0.3s ease;
-}
-.contact .container .container__content .content__info .info__address .address__link:hover {
-  color: #4353ff;
-}
-.contact .container .container__content .content__info .info__phone {
+.content__container .content__info .info__phone {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.contact .container .container__content .content__info .info__phone .phone__link:link,
-.contact .container .container__content .content__info .info__phone .phone__link:visited,
-.contact .container .container__content .content__info .info__phone .phone__link:hover,
-.contact .container .container__content .content__info .info__phone .phone__link:active {
-  font-family: "Bw Modelica SS01", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5em;
-  color: #151f5a;
-  transition: 0.3s ease;
-}
-.contact .container .container__content .content__info .info__phone .phone__link:hover {
-  color: #4353ff;
-}
-.contact .container .container__content .content__info .info__email {
+.content__container .content__info .info__email {
   display: flex;
   align-items: center;
   gap: 24px;
 }
-.contact .container .container__content .content__info .info__email .email__link:link,
-.contact .container .container__content .content__info .info__email .email__link:visited,
-.contact .container .container__content .content__info .info__email .email__link:hover,
-.contact .container .container__content .content__info .info__email .email__link:active {
-  font-family: "Bw Modelica SS01", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5em;
-  color: #151f5a;
-  transition: 0.3s ease;
-}
-.contact .container .container__content .content__info .info__email .email__link:hover {
-  color: #4353ff;
-}
-.contact .container .container__form {
+
+.form__container {
   margin-right: -24px;
 }
-.contact .container .container__form form {
+.form__container form {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.contact .container .container__form form input,
-.contact .container .container__form form textarea {
+.form__container form input,
+.form__container form textarea {
   width: 424px;
   height: 56px;
   border: 1px solid #ada9bb;
   border-radius: 4px;
   padding: 16px 20px;
 }
-.contact .container .container__form form input::-moz-placeholder, .contact .container .container__form form textarea::-moz-placeholder {
+.form__container form input::-moz-placeholder, .form__container form textarea::-moz-placeholder {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5em;
   color: #ada9bb;
 }
-.contact .container .container__form form input::placeholder,
-.contact .container .container__form form textarea::placeholder {
+.form__container form input::placeholder,
+.form__container form textarea::placeholder {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5em;
   color: #ada9bb;
 }
-.contact .container .container__form form textarea {
+.form__container form textarea {
   height: 224px;
   resize: none;
   margin-bottom: 15px;
 }
-.contact .container .container__form form button {
+.form__container form button {
   padding: 16px 40px;
   width: 139px;
 }
