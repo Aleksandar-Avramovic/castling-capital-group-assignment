@@ -931,15 +931,16 @@ a {
   background-image: url("../../assets/images/team-background-img.png");
   background-repeat: no-repeat;
   background-position: top right;
-  height: 744px;
+  min-height: 744px;
   padding-top: 129px;
   margin-left: -9px;
   z-index: 3;
 }
-.team .container .container__content {
+
+.container__content {
   width: 688px;
 }
-.team .container .container__content .content__pretitle {
+.container__content .content__pretitle {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -947,24 +948,24 @@ a {
   color: #fff;
   margin-bottom: 9px;
 }
-.team .container .container__content .content__title, .team .footer .container .container__content .container__lower-section .lower-section__content .content__text, .team .footer .container .container__content .container__lower-section .lower-section__content .content__copyright, .footer .team .container .container__content .container__lower-section .lower-section__content .content__text, .footer .team .container .container__content .container__lower-section .lower-section__content .content__copyright, .team .footer .container .container__lower-section .lower-section__content .container__content .content__text, .team .footer .container .container__lower-section .lower-section__content .container__content .content__copyright, .footer .team .container .container__lower-section .lower-section__content .container__content .content__text, .footer .team .container .container__lower-section .lower-section__content .container__content .content__copyright {
+.container__content .content__title, .container__content .footer .container .container__lower-section .lower-section__content .content__text, .container__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__content .content__text, .footer .container .container__lower-section .lower-section__content .container__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 48px;
   line-height: 1.33em;
   color: #fff;
   margin-bottom: 55px;
 }
-.team .container .container__content .content__cards {
+.container__content .content__cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-column-gap: 64px;
   grid-row-gap: 24px;
 }
-.team .container .container__content .content__cards .cards__card {
-  width: 312px;
+.container__content .content__cards .cards__card {
+  max-width: 312px;
 }
-.team .container .container__content .content__cards .cards__card .card__name {
+.container__content .content__cards .cards__card .card__name {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 700;
   font-size: 24px;
@@ -972,7 +973,7 @@ a {
   color: #fff;
   margin-bottom: 8px;
 }
-.team .container .container__content .content__cards .cards__card .card__job-title {
+.container__content .content__cards .cards__card .card__job-title {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -980,7 +981,7 @@ a {
   color: #fff;
   margin-bottom: 16px;
 }
-.team .container .container__content .content__cards .cards__card .card__text {
+.container__content .content__cards .cards__card .card__text {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -988,6 +989,64 @@ a {
   color: #fff;
 }
 
+@media (max-width: 1400px) {
+  .team {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    margin-left: 0;
+    background-position: center right;
+    background-size: 900px;
+  }
+}
+@media (max-width: 1200px) {
+  .team {
+    background-image: none;
+    justify-content: center;
+    min-height: 600px;
+  }
+  .container__content {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .container__content .content__pretitle,
+  .container__content .content__title,
+  .container__content .footer .container .container__lower-section .lower-section__content .content__text,
+  .container__content .footer .container .container__lower-section .lower-section__content .content__copyright,
+  .footer .container .container__lower-section .lower-section__content .container__content .content__text,
+  .footer .container .container__lower-section .lower-section__content .container__content .content__copyright {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .container__content .content__pretitle {
+    font-size: 14px;
+  }
+  .container__content .content__title, .container__content .footer .container .container__lower-section .lower-section__content .content__text, .container__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__content .content__text, .footer .container .container__lower-section .lower-section__content .container__content .content__copyright {
+    font-size: 24px;
+  }
+  .container__content .content__cards {
+    grid-row-gap: 48px;
+  }
+  .container__content .content__cards .cards__card .card__name {
+    font-size: 18px;
+  }
+  .container__content .content__cards .cards__card .card__job-title,
+  .container__content .content__cards .cards__card .card__text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .team {
+    padding: 40px 20px;
+  }
+}
+@media (max-width: 480px) {
+  .container__content .content__cards {
+    grid-template-columns: 1fr;
+  }
+}
 .contact {
   height: 750px;
   background-color: #fff;

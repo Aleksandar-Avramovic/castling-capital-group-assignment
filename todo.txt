@@ -5,4 +5,4 @@
 - Pogledaj kako bi mogao da uradis i stilizujes validaciju forme na frontu
 - Proveri za visinu team sekcije tako da se pozadinska slika vidi cela
 - Footer (proveri da li mozes da sredis width border-a)
-- U headeru gledaj da napravis da nemas zaseban element .sidebar nego da pretvoris nav menu u sidebar
+
