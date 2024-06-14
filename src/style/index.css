@@ -521,10 +521,17 @@ a {
 }
 @media (max-width: 576px) {
   .hero .container .hero__container {
-    padding: 0 20px;
+    padding: 20px;
+    gap: 30px;
+  }
+  .hero .container .hero__container .hero__content .content__pretitle {
+    font-size: 16px;
   }
   .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
     font-size: 30px;
+  }
+  .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+    font-size: 14px;
   }
 }
 .about-us {
@@ -670,7 +677,7 @@ a {
   .about-us__card {
     width: 100%;
     height: 100%;
-    padding: 30px;
+    padding: 20px;
   }
   .about-us__card .card__content .content__title, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
     font-size: 24px;
@@ -699,26 +706,28 @@ a {
 .our-approach {
   display: flex;
   align-items: center;
-  height: 1136px;
+  min-height: 1136px;
   background: linear-gradient(to bottom, rgb(232, 240, 253) 47%, #080185 47%);
-  padding-left: 14px;
 }
-.our-approach .container {
+
+.our-approach__wrapper {
   display: flex;
   flex-direction: column;
   gap: 130px;
   padding: 64px 88px;
+  margin-left: -5px;
   width: 1320px;
-  height: 904px;
+  min-height: 904px;
   background-color: #fff;
   box-shadow: 0 0 32px rgba(8, 0, 133, 0.16);
 }
-.our-approach .container .container__upper-section {
+
+.container__upper-section {
   display: flex;
-  justify-content: space-between;
+  gap: 165px;
   width: 100%;
 }
-.our-approach .container .container__upper-section .upper-section__img-wrapper {
+.container__upper-section .upper-section__img-wrapper {
   width: 340px;
   height: 340px;
   border-radius: 163.84px 163.84px 0 0;
@@ -728,11 +737,15 @@ a {
   align-items: center;
   justify-content: center;
 }
-.our-approach .container .container__upper-section .upper-section__content {
+.container__upper-section .upper-section__img-wrapper img {
+  max-width: 100%;
+  height: 100%;
+}
+.container__upper-section .upper-section__content {
   width: 640px;
   padding-top: 10px;
 }
-.our-approach .container .container__upper-section .upper-section__content .content__pretitle {
+.container__upper-section .upper-section__content .content__pretitle {
   font-family: "Bw Modelica SS01";
   font-weight: 600;
   font-size: 16px;
@@ -740,34 +753,35 @@ a {
   line-height: 2em;
   margin-bottom: 6px;
 }
-.our-approach .container .container__upper-section .upper-section__content .content__title, .our-approach .footer .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__text, .our-approach .footer .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__text, .footer .our-approach .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .our-approach .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .our-approach .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .footer .our-approach .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+.container__upper-section .upper-section__content .content__title, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__text, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
   line-height: 1.375em;
   margin-bottom: 26px;
 }
-.our-approach .container .container__upper-section .upper-section__content .content__text, .our-approach .footer .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__upper-section .upper-section__content .container__lower-section .lower-section__content .content__copyright, .our-approach .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+.container__upper-section .upper-section__content .content__text, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
   color: #151f5a;
   line-height: 1.5em;
 }
-.our-approach .container .container__lower-section {
+
+.container__lower-section {
   display: flex;
-  justify-content: space-between;
+  gap: 290px;
   background: linear-gradient(135deg, rgb(27, 39, 113), rgb(51, 74, 215));
   width: 100%;
-  height: 308px;
+  min-height: 308px;
   padding: 32px 48px;
 }
-.our-approach .container .container__lower-section .lower-section__content {
+.container__lower-section .lower-section__content {
   width: 564px;
   padding-top: 26px;
   padding-left: 2px;
 }
-.our-approach .container .container__lower-section .lower-section__content .content__title, .our-approach .footer .container .container__lower-section .lower-section__content .content__text, .our-approach .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .content__text, .footer .our-approach .container .container__lower-section .lower-section__content .content__copyright {
+.container__lower-section .lower-section__content .content__title, .footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
@@ -775,7 +789,7 @@ a {
   color: #fff;
   margin-bottom: 26px;
 }
-.our-approach .container .container__lower-section .lower-section__content .content__text, .our-approach .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .our-approach .container .container__lower-section .lower-section__content .content__copyright {
+.container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -809,6 +823,106 @@ a {
 @media (max-width: 600px) {
   .animate-our-approach.animate {
     animation: none;
+  }
+}
+@media (max-width: 1600px) {
+  .our-approach__wrapper {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+@media (max-width: 1400px) {
+  .container__upper-section {
+    gap: 100px;
+  }
+  .container__lower-section {
+    gap: 90px;
+  }
+}
+@media (max-width: 1200px) {
+  .our-approach__wrapper {
+    gap: 100px;
+  }
+  .container__upper-section {
+    gap: 30px;
+  }
+  .container__upper-section .upper-section__img-wrapper {
+    max-width: 240px;
+    height: 240px;
+  }
+  .container__lower-section {
+    gap: 20px;
+    align-items: center;
+  }
+}
+@media (max-width: 992px) {
+  .our-approach {
+    padding-top: 80px;
+  }
+  .container__upper-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container__upper-section .upper-section__content {
+    width: 100%;
+    text-align: center;
+  }
+  .container__upper-section .upper-section__img-wrapper {
+    width: 200px;
+    height: 200px;
+  }
+  .container__lower-section {
+    padding: 0 20px;
+    text-align: center;
+  }
+  .container__lower-section .lower-section__img-wrapper {
+    display: none;
+  }
+  .container__lower-section .lower-section__content {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .our-approach {
+    padding-top: 50px;
+  }
+  .our-approach__wrapper {
+    gap: 60px;
+    padding: 60px 20px;
+  }
+  .container__upper-section .upper-section__content .content__pretitle,
+  .container__upper-section .upper-section__content .content__text,
+  .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright,
+  .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+    font-size: 14px;
+  }
+  .container__upper-section .upper-section__content .content__title, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__text, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+    font-size: 24px;
+  }
+  .container__lower-section {
+    min-height: 308px;
+  }
+  .container__lower-section .lower-section__content {
+    padding-top: 0;
+  }
+  .container__lower-section .lower-section__content .content__title, .footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+    font-size: 24px;
+  }
+  .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+    font-size: 14px;
+  }
+}
+@media (max-width: 576px) {
+  .our-approach {
+    padding: 50px 20px 0 20px;
+  }
+  .container__upper-section .upper-section__img-wrapper {
+    width: 150px;
+    height: 150px;
+  }
+  .container__lower-section {
+    padding: 20px;
   }
 }
 .team {
