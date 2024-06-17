@@ -4,4 +4,4 @@
 - Iscackaj kako bi mogao da koristis @extend u Sass-u da ne bi ponavljao kod bazicne stilizacije
 - Pogledaj kako bi mogao da uradis i stilizujes validaciju forme na frontu
 - Footer (proveri da li mozes da sredis width border-a)
-
+- animacija reveal ide red po red
