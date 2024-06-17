@@ -110,3 +110,20 @@
     }
   }
 }
+
+// Animations
+.animate-form.animate {
+  animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;
+}
+
+.animate-contact.animate {
+  animation: reveal 2s ease forwards;
+}
+// Responsive
+
+@media (max-width: 600px) {
+  .animate-form.animate,
+  .animate-contact.animate {
+    animation: none;
+  }
+}

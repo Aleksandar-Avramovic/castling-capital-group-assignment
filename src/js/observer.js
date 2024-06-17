@@ -1,21 +1,26 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".about-us, .our-approach"); // Add more sections as needed
+  const sections = document.querySelectorAll(
+    ".about-us, .our-approach, .contact"
+  ); // Add more sections as needed
 
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (window.innerWidth >= 600) {
-          const animatedBlock = entry.target.querySelector(
-            ".animate-about, .animate-our-approach"
+          const animatedBlocks = entry.target.querySelectorAll(
+            ".animate-about, .animate-our-approach, .animate-contact, .animate-form"
           );
-          if (entry.isIntersecting && animatedBlock) {
-            animatedBlock.classList.add("animate");
 
-            // Remove the animation class after it completes to reset for the next time
-            setTimeout(() => {
-              animatedBlock.classList.remove("animate");
-            }, 2000); // Match this timeout with the duration of your animation
-          }
+          animatedBlocks.forEach((animatedBlock) => {
+            if (entry.isIntersecting && animatedBlock) {
+              animatedBlock.classList.add("animate");
+
+              // Remove the animation class after it completes to reset for the next time
+              setTimeout(() => {
+                animatedBlock.classList.remove("animate");
+              }, 2000); // Match this timeout with the duration of your animation
+            }
+          });
         }
       });
     },
@@ -38,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (isInViewport) {
       const animatedBlock = entry.target.querySelector(
-        ".animate-about, .animate-our-approach"
+        ".animate-about, .animate-our-approach, animate-contact, .animate-form"
       );
       if (animatedBlock) {
         animatedBlock.classList.add("animate");
