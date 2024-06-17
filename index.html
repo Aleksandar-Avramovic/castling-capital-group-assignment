@@ -202,7 +202,8 @@
         <div class="content__container">
           <p class="content__pretitle">Contact</p>
           <h2 class="content__title animate-contact">
-            Thank you for your interest in Castling
+            Thank you for your interest
+            in Castling
           </h2>
           <p class="content__text">
             If you have questions or comments, please fill out the contact form
@@ -227,12 +228,24 @@
           </div>
         </div>
         <div class="form__container animate-form">
-          <form class="form">
-            <input type="text" placeholder="Name *" required />
-            <input type="email" placeholder="Email *" required />
-            <input type="tel" placeholder="Phone *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" title="111-111-1111"
-              required />
-            <textarea placeholder="Message"></textarea>
+          <form id="form" class="form" novalidate>
+            <div class="name__block">
+              <input id="name" type="text" placeholder="Name *" required />
+              <span id="name-msg"></span>
+            </div>
+            <div class="email__block">
+              <input id="email" type="email" placeholder="Email *" required />
+              <span id="email-msg"></span>
+            </div>
+            <div class="phone__block">
+              <input id="phone" type="tel" placeholder="Phone *" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                title="111-111-1111" required />
+              <span id="phone-msg"></span>
+            </div>
+            <div class="msg__block">
+              <textarea id="message" placeholder="Message *"></textarea>
+              <span id="message-msg"></span>
+            </div>
             <button type="submit" class="form__btn button">Submit</button>
           </form>
         </div>
@@ -304,6 +317,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.14/lottie.min.js"></script>
   <script src="./src/js/animation.js"></script>
   <script src="./src/js/observer.js"></script>
+  <script src="./src/js/formValidation.js"></script>
 </body>
 
 </html>

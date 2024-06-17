@@ -63,6 +63,7 @@
       .address__logo {
         width: 32px;
         height: 32px;
+        align-items: center;
       }
     }
     .info__phone {
@@ -83,13 +84,23 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    .name__block,
+    .email__block,
+    .phone__block,
+    .msg__block {
+      position: relative;
+    }
     input,
     textarea {
+      font-family: "Bw Modelica SS01";
+      font-size: 20px;
       width: 424px;
       height: 56px;
       border: 1px solid $input-border;
       border-radius: 4px;
       padding: 16px 20px;
+      transition: all 0.3s ease;
+      text-overflow: ellipsis;
     }
     input::placeholder,
     textarea::placeholder {
@@ -99,6 +110,12 @@
       line-height: 1.5em;
       color: $input-border;
     }
+    input:focus,
+    textarea:focus {
+      outline: none;
+      border: 3px solid $accent-blue;
+      border-radius: 8px;
+    }
     textarea {
       height: 224px;
       resize: none;
@@ -107,6 +124,21 @@
     button {
       padding: 16px 40px;
       width: 139px;
+    }
+    span {
+      display: none;
+    }
+    span.shown {
+      font-family: "Bw Modelica SS01";
+      font-weight: 600;
+      display: block;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: $accent-blue;
+      margin-top: -16px;
+      position: absolute;
+      bottom: -16px;
+      letter-spacing: 1px;
     }
   }
 }
@@ -119,6 +151,7 @@
 .animate-contact.animate {
   animation: reveal 2s ease forwards;
 }
+
 // Responsive
 
 @media (max-width: 600px) {
@@ -134,6 +167,11 @@
   }
   .form__container {
     margin-right: 0;
+  }
+  .content__info {
+    .info__address {
+      align-items: center;
+    }
   }
 }
 

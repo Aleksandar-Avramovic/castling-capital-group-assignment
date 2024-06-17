@@ -1112,6 +1112,7 @@ a {
 .content__container .content__info .info__address .address__logo {
   width: 32px;
   height: 32px;
+  align-items: center;
 }
 .content__container .content__info .info__phone {
   display: flex;
@@ -1132,13 +1133,23 @@ a {
   flex-direction: column;
   gap: 24px;
 }
+.form__container form .name__block,
+.form__container form .email__block,
+.form__container form .phone__block,
+.form__container form .msg__block {
+  position: relative;
+}
 .form__container form input,
 .form__container form textarea {
+  font-family: "Bw Modelica SS01";
+  font-size: 20px;
   width: 424px;
   height: 56px;
   border: 1px solid #ada9bb;
   border-radius: 4px;
   padding: 16px 20px;
+  transition: all 0.3s ease;
+  text-overflow: ellipsis;
 }
 .form__container form input::-moz-placeholder, .form__container form textarea::-moz-placeholder {
   font-family: "Bw Modelica SS01", sans-serif;
@@ -1155,6 +1166,12 @@ a {
   line-height: 1.5em;
   color: #ada9bb;
 }
+.form__container form input:focus,
+.form__container form textarea:focus {
+  outline: none;
+  border: 3px solid #4353ff;
+  border-radius: 8px;
+}
 .form__container form textarea {
   height: 224px;
   resize: none;
@@ -1163,6 +1180,21 @@ a {
 .form__container form button {
   padding: 16px 40px;
   width: 139px;
+}
+.form__container form span {
+  display: none;
+}
+.form__container form span.shown {
+  font-family: "Bw Modelica SS01";
+  font-weight: 600;
+  display: block;
+  font-size: 10px;
+  text-transform: uppercase;
+  color: #4353ff;
+  margin-top: -16px;
+  position: absolute;
+  bottom: -16px;
+  letter-spacing: 1px;
 }
 
 .animate-form.animate {
@@ -1185,6 +1217,9 @@ a {
   }
   .form__container {
     margin-right: 0;
+  }
+  .content__info .info__address {
+    align-items: center;
   }
 }
 @media (max-width: 992px) {
