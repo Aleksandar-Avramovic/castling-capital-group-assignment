@@ -1358,4 +1358,22 @@ a {
 }
 .container__bottom-section .bottom-section__content .content__copyright a:hover {
   background-position: -100% 0;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+@media (min-width: 1200px) {
+  .container__above-section .above-section__icon:hover {
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    background-color: #4353ff;
+    box-shadow: 0 3px 6px rgba(238, 224, 219, 0.4);
+    animation: bounce 1.5s infinite linear;
+  }
 }/*# sourceMappingURL=index.css.map */
