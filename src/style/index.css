@@ -352,7 +352,7 @@ a {
   animation: reveal 2s ease forwards;
   animation-delay: 2s;
 }
-.hero__content .content__title, .hero__content .footer .container .container__lower-section .lower-section__content .content__text, .hero__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright {
+.hero__content .content__title, .hero__content .container__bottom-section .bottom-section__content .content__text, .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero__content .content__text, .container__bottom-section .bottom-section__content .hero__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 56px;
   color: #fff;
@@ -362,7 +362,7 @@ a {
   opacity: 0;
   animation: reveal 2s ease forwards;
 }
-.hero__content .content__text, .hero__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright {
+.hero__content .content__text, .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -432,7 +432,7 @@ a {
     width: 650px;
     padding-top: 300px;
   }
-  .hero__content .content__title, .hero__content .footer .container .container__lower-section .lower-section__content .content__text, .hero__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .hero__content .content__text, .footer .container .container__lower-section .lower-section__content .hero__content .content__copyright {
+  .hero__content .content__title, .hero__content .container__bottom-section .bottom-section__content .content__text, .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero__content .content__text, .container__bottom-section .bottom-section__content .hero__content .content__copyright {
     font-size: 50px;
   }
 }
@@ -446,7 +446,7 @@ a {
   .hero .container .hero__container .hero__content {
     padding-top: 30px;
   }
-  .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .content__title, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__text, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__text, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     font-size: 46px;
     margin-bottom: 30px;
   }
@@ -471,12 +471,12 @@ a {
   .hero .container .hero__container .hero__content .content__pretitle {
     width: 100%;
   }
-  .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .content__title, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__text, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__text, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     font-size: 40px;
     width: 100%;
     margin-bottom: 20px;
   }
-  .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .content__text, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     width: 100%;
   }
   .hero .container .hero__container .hero__content .content__text--lower {
@@ -494,7 +494,7 @@ a {
   .hero .container .hero__container .hero__content .content__pretitle {
     font-size: 18px;
   }
-  .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .content__title, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__text, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__text, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     font-size: 40px;
   }
   .hero .container .hero__container .hero__content .hero__btn {
@@ -506,10 +506,8 @@ a {
   .hero .container .hero__container .hero__content .content__pretitle,
   .hero .container .hero__container .hero__content .content__title,
   .hero .container .hero__container .hero__content .content__text,
-  .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright,
-  .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright,
-  .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright,
-  .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright,
+  .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     animation: none;
     opacity: 1;
   }
@@ -525,10 +523,10 @@ a {
   .hero .container .hero__container .hero__content .content__pretitle {
     font-size: 16px;
   }
-  .hero .container .hero__container .hero__content .content__title, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__text, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__text, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .content__title, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__text, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__text, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     font-size: 30px;
   }
-  .hero .container .hero__container .hero__content .content__text, .hero .footer .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .footer .hero .container .hero__container .hero__content .container__lower-section .lower-section__content .content__copyright, .hero .footer .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright, .footer .hero .container .container__lower-section .lower-section__content .hero__container .hero__content .content__copyright {
+  .hero .container .hero__container .hero__content .content__text, .hero .container .hero__container .hero__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .hero .container .hero__container .hero__content .content__copyright {
     font-size: 14px;
   }
 }
@@ -566,14 +564,14 @@ a {
   line-height: 1.5em;
   margin-bottom: 16px;
 }
-.about-us__card .card__content .content__title, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+.about-us__card .card__content .content__title, .about-us__card .card__content .container__bottom-section .bottom-section__content .content__text, .about-us__card .card__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .about-us__card .card__content .content__text, .container__bottom-section .bottom-section__content .about-us__card .card__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
   line-height: 1.375em;
   margin-bottom: 30px;
 }
-.about-us__card .card__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+.about-us__card .card__content .content__text, .about-us__card .card__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .about-us__card .card__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -677,13 +675,13 @@ a {
     height: 100%;
     padding: 20px;
   }
-  .about-us__card .card__content .content__title, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__text, .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__text, .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+  .about-us__card .card__content .content__title, .about-us__card .card__content .container__bottom-section .bottom-section__content .content__text, .about-us__card .card__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .about-us__card .card__content .content__text, .container__bottom-section .bottom-section__content .about-us__card .card__content .content__copyright {
     font-size: 24px;
   }
   .about-us__card .card__content .content__pretitle,
   .about-us__card .card__content .content__text,
-  .about-us__card .card__content .footer .container .container__lower-section .lower-section__content .content__copyright,
-  .footer .container .container__lower-section .lower-section__content .about-us__card .card__content .content__copyright {
+  .about-us__card .card__content .container__bottom-section .bottom-section__content .content__copyright,
+  .container__bottom-section .bottom-section__content .about-us__card .card__content .content__copyright {
     font-size: 14px;
   }
 }
@@ -751,14 +749,14 @@ a {
   line-height: 2em;
   margin-bottom: 6px;
 }
-.container__upper-section .upper-section__content .content__title, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__text, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+.container__upper-section .upper-section__content .content__title, .container__upper-section .upper-section__content .container__bottom-section .bottom-section__content .content__text, .container__upper-section .upper-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__upper-section .upper-section__content .content__text, .container__bottom-section .bottom-section__content .container__upper-section .upper-section__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
   line-height: 1.375em;
   margin-bottom: 26px;
 }
-.container__upper-section .upper-section__content .content__text, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+.container__upper-section .upper-section__content .content__text, .container__upper-section .upper-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__upper-section .upper-section__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -779,7 +777,7 @@ a {
   padding-top: 26px;
   padding-left: 2px;
 }
-.container__lower-section .lower-section__content .content__title, .footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+.container__lower-section .lower-section__content .content__title, .container__lower-section .lower-section__content .container__bottom-section .bottom-section__content .content__text, .container__lower-section .lower-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__lower-section .lower-section__content .content__text, .container__bottom-section .bottom-section__content .container__lower-section .lower-section__content .content__copyright {
   font-family: "Blacker Display";
   font-size: 32px;
   color: #151f5a;
@@ -787,7 +785,7 @@ a {
   color: #fff;
   margin-bottom: 26px;
 }
-.container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+.container__lower-section .lower-section__content .content__text, .container__lower-section .lower-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__lower-section .lower-section__content .content__copyright {
   font-family: "Bw Modelica SS01";
   font-weight: 500;
   font-size: 16px;
@@ -891,11 +889,11 @@ a {
   }
   .container__upper-section .upper-section__content .content__pretitle,
   .container__upper-section .upper-section__content .content__text,
-  .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright,
-  .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+  .container__upper-section .upper-section__content .container__bottom-section .bottom-section__content .content__copyright,
+  .container__bottom-section .bottom-section__content .container__upper-section .upper-section__content .content__copyright {
     font-size: 14px;
   }
-  .container__upper-section .upper-section__content .content__title, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__text, .container__upper-section .upper-section__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__text, .footer .container .container__lower-section .lower-section__content .container__upper-section .upper-section__content .content__copyright {
+  .container__upper-section .upper-section__content .content__title, .container__upper-section .upper-section__content .container__bottom-section .bottom-section__content .content__text, .container__upper-section .upper-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__upper-section .upper-section__content .content__text, .container__bottom-section .bottom-section__content .container__upper-section .upper-section__content .content__copyright {
     font-size: 24px;
   }
   .container__lower-section {
@@ -904,10 +902,10 @@ a {
   .container__lower-section .lower-section__content {
     padding-top: 0;
   }
-  .container__lower-section .lower-section__content .content__title, .footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+  .container__lower-section .lower-section__content .content__title, .container__lower-section .lower-section__content .container__bottom-section .bottom-section__content .content__text, .container__lower-section .lower-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__lower-section .lower-section__content .content__text, .container__bottom-section .bottom-section__content .container__lower-section .lower-section__content .content__copyright {
     font-size: 24px;
   }
-  .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+  .container__lower-section .lower-section__content .content__text, .container__lower-section .lower-section__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__lower-section .lower-section__content .content__copyright {
     font-size: 14px;
   }
 }
@@ -946,7 +944,7 @@ a {
   color: #fff;
   margin-bottom: 9px;
 }
-.container__content .content__title, .container__content .footer .container .container__lower-section .lower-section__content .content__text, .container__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__content .content__text, .footer .container .container__lower-section .lower-section__content .container__content .content__copyright {
+.container__content .content__title, .container__content .container__bottom-section .bottom-section__content .content__text, .container__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__content .content__text, .container__bottom-section .bottom-section__content .container__content .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 48px;
   line-height: 1.33em;
@@ -1010,10 +1008,10 @@ a {
 @media (max-width: 992px) {
   .container__content .content__pretitle,
   .container__content .content__title,
-  .container__content .footer .container .container__lower-section .lower-section__content .content__text,
-  .container__content .footer .container .container__lower-section .lower-section__content .content__copyright,
-  .footer .container .container__lower-section .lower-section__content .container__content .content__text,
-  .footer .container .container__lower-section .lower-section__content .container__content .content__copyright {
+  .container__content .container__bottom-section .bottom-section__content .content__text,
+  .container__content .container__bottom-section .bottom-section__content .content__copyright,
+  .container__bottom-section .bottom-section__content .container__content .content__text,
+  .container__bottom-section .bottom-section__content .container__content .content__copyright {
     text-align: center;
   }
 }
@@ -1021,7 +1019,7 @@ a {
   .container__content .content__pretitle {
     font-size: 14px;
   }
-  .container__content .content__title, .container__content .footer .container .container__lower-section .lower-section__content .content__text, .container__content .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .container__content .content__text, .footer .container .container__lower-section .lower-section__content .container__content .content__copyright {
+  .container__content .content__title, .container__content .container__bottom-section .bottom-section__content .content__text, .container__content .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .container__content .content__text, .container__bottom-section .bottom-section__content .container__content .content__copyright {
     font-size: 24px;
   }
   .container__content .content__cards {
@@ -1068,14 +1066,14 @@ a {
   color: #151f5a;
   margin-bottom: 9px;
 }
-.content__container .content__title, .content__container .footer .container .container__lower-section .lower-section__content .content__text, .content__container .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .content__container .content__text, .footer .container .container__lower-section .lower-section__content .content__container .content__copyright {
+.content__container .content__title, .content__container .container__bottom-section .bottom-section__content .content__text, .content__container .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .content__container .content__text, .container__bottom-section .bottom-section__content .content__container .content__copyright {
   font-family: "Blacker Display", sans-serif;
   font-size: 48px;
   line-height: 1.33em;
   color: #151f5a;
   margin-bottom: 30px;
 }
-.content__container .content__text, .content__container .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .content__container .content__copyright {
+.content__container .content__text, .content__container .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .content__container .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -1243,10 +1241,10 @@ a {
   }
   .content__container .content__pretitle,
   .content__container .content__title,
-  .content__container .footer .container .container__lower-section .lower-section__content .content__text,
-  .content__container .footer .container .container__lower-section .lower-section__content .content__copyright,
-  .footer .container .container__lower-section .lower-section__content .content__container .content__text,
-  .footer .container .container__lower-section .lower-section__content .content__container .content__copyright,
+  .content__container .container__bottom-section .bottom-section__content .content__text,
+  .content__container .container__bottom-section .bottom-section__content .content__copyright,
+  .container__bottom-section .bottom-section__content .content__container .content__text,
+  .container__bottom-section .bottom-section__content .content__container .content__copyright,
   .content__container .content__text {
     text-align: center;
   }
@@ -1268,11 +1266,11 @@ a {
   }
   .content__container .content__pretitle,
   .content__container .content__text,
-  .content__container .footer .container .container__lower-section .lower-section__content .content__copyright,
-  .footer .container .container__lower-section .lower-section__content .content__container .content__copyright {
+  .content__container .container__bottom-section .bottom-section__content .content__copyright,
+  .container__bottom-section .bottom-section__content .content__container .content__copyright {
     font-size: 14px;
   }
-  .content__container .content__title, .content__container .footer .container .container__lower-section .lower-section__content .content__text, .content__container .footer .container .container__lower-section .lower-section__content .content__copyright, .footer .container .container__lower-section .lower-section__content .content__container .content__text, .footer .container .container__lower-section .lower-section__content .content__container .content__copyright {
+  .content__container .content__title, .content__container .container__bottom-section .bottom-section__content .content__text, .content__container .container__bottom-section .bottom-section__content .content__copyright, .container__bottom-section .bottom-section__content .content__container .content__text, .container__bottom-section .bottom-section__content .content__container .content__copyright {
     font-size: 24px;
   }
 }
@@ -1281,52 +1279,58 @@ a {
   background-color: #151f5a;
   border-radius: 64px 64px 0 0;
 }
-.footer .container {
+
+.footer__wrapper {
   padding-top: 33px;
 }
-.footer .container .container__upper-section {
+
+.container__above-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 118px;
   margin-bottom: 15px;
 }
-.footer .container .container__upper-section .upper-section__logo {
+.container__above-section .above-section__logo {
   margin-left: -10px;
 }
-.footer .container .container__upper-section .upper-section__nav ul {
+.container__above-section .above-section__nav ul {
   display: flex;
   justify-content: space-between;
   width: 533px;
 }
-.footer .container .container__upper-section .upper-section__nav ul li a:link,
-.footer .container .container__upper-section .upper-section__nav ul li a:visited,
-.footer .container .container__upper-section .upper-section__nav ul li a:hover,
-.footer .container .container__upper-section .upper-section__nav ul li a:active {
+.container__above-section .above-section__nav ul li a:link,
+.container__above-section .above-section__nav ul li a:visited {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #e8f0fd;
   line-height: 1.5em;
-  transition: 0.3s ease;
+  background-image: linear-gradient(to right, #e8f0fd 50%, #4353ff 50%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s;
 }
-.footer .container .container__upper-section .upper-section__nav ul li a:hover {
-  color: #4353ff;
+.container__above-section .above-section__nav ul li a:hover {
+  background-position: -100% 0;
 }
-.footer .container .container__upper-section .upper-section__icon {
+.container__above-section .above-section__icon {
   margin-right: -25px;
 }
-.footer .container .container__lower-section {
+
+.container__bottom-section {
   border-top: 1px solid #fff;
   padding-top: 24px;
   padding-left: 14px;
 }
-.footer .container .container__lower-section .lower-section__content {
+.container__bottom-section .bottom-section__content {
   width: 1024px;
   text-align: center;
   margin: 0 auto;
 }
-.footer .container .container__lower-section .lower-section__content .content__title, .footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+.container__bottom-section .bottom-section__content .content__title, .container__bottom-section .bottom-section__content .content__text, .container__bottom-section .bottom-section__content .content__copyright {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 600;
   font-size: 16px;
@@ -1334,21 +1338,24 @@ a {
   line-height: 1.5em;
   margin-bottom: 9px;
 }
-.footer .container .container__lower-section .lower-section__content .content__text, .footer .container .container__lower-section .lower-section__content .content__copyright {
+.container__bottom-section .bottom-section__content .content__text, .container__bottom-section .bottom-section__content .content__copyright {
   font-weight: 500;
   margin-bottom: 38px;
 }
-.footer .container .container__lower-section .lower-section__content .content__copyright a:link,
-.footer .container .container__lower-section .lower-section__content .content__copyright a:visited,
-.footer .container .container__lower-section .lower-section__content .content__copyright a:hover,
-.footer .container .container__lower-section .lower-section__content .content__copyright a:active {
+.container__bottom-section .bottom-section__content .content__copyright a:link,
+.container__bottom-section .bottom-section__content .content__copyright a:visited {
   font-family: "Bw Modelica SS01", sans-serif;
   font-weight: 500;
   font-size: 16px;
   color: #e8f0fd;
   line-height: 1.5em;
-  transition: 0.3s ease;
+  background-image: linear-gradient(to right, #e8f0fd 50%, #4353ff 50%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: background-position 0.5s;
 }
-.footer .container .container__lower-section .lower-section__content .content__copyright a:hover {
-  color: #4353ff;
+.container__bottom-section .bottom-section__content .content__copyright a:hover {
+  background-position: -100% 0;
 }/*# sourceMappingURL=index.css.map */
