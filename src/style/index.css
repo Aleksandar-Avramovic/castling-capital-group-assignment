@@ -1194,6 +1194,9 @@ a {
   bottom: -16px;
   letter-spacing: 1px;
 }
+.form__container form #message-msg.shown {
+  bottom: 4px;
+}
 
 .animate-form.animate {
   animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;
@@ -1281,6 +1284,9 @@ a {
   .content__container .content__info a:link,
   .content__container .content__info a:visited {
     font-size: 14px;
+  }
+  .form__container form input {
+    font-size: 16px;
   }
 }
 .footer {
