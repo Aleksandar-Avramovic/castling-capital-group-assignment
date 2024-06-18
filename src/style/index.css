@@ -1198,14 +1198,14 @@ a {
   bottom: 4px;
 }
 .form__container form #counter {
-  background-color: #4353ff;
-  color: #fff;
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #ada9bb;
   position: absolute;
   display: inline;
   right: 0;
-  bottom: -18px;
-  border-radius: 15px;
-  padding: 5px;
+  bottom: -2px;
 }
 
 .animate-form.animate {
