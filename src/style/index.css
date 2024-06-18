@@ -1277,6 +1277,12 @@ a {
     font-size: 24px;
   }
 }
+@media (max-width: 576px) {
+  .content__container .content__info a:link,
+  .content__container .content__info a:visited {
+    font-size: 14px;
+  }
+}
 .footer {
   min-height: 470px;
   background-color: #151f5a;

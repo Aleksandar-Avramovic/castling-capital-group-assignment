@@ -231,3 +231,14 @@
     }
   }
 }
+
+@include breakpoint(sm) {
+  .content__container {
+    .content__info {
+      a:link,
+      a:visited {
+        font-size: 14px;
+      }
+    }
+  }
+}
