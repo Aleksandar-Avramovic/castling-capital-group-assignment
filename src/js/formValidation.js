@@ -60,6 +60,14 @@ const validatePhone = () => {
   return true;
 };
 
+// Counter handler
+const messageTextarea = document.getElementById("message");
+const messageCounter = document.getElementById("counter");
+const updateCounter = () => {
+  const currentLength = messageTextarea.value.length;
+  messageCounter.textContent = `${currentLength} / 500`;
+};
+
 const validateName = () => validateField("name", "name-msg");
 const validateMessage = () => validateField("message", "message-msg");
 
@@ -84,6 +92,7 @@ document.getElementById("form").addEventListener("submit", (e) => {
     console.log("Form data is valid.");
 
     clearForm();
+    updateCounter();
   }
 });
 
@@ -98,3 +107,6 @@ addValidationListeners("name", validateName);
 addValidationListeners("email", validateEmail);
 addValidationListeners("phone", validatePhone);
 addValidationListeners("message", validateMessage);
+
+// Event listener for counter
+messageTextarea.addEventListener("input", updateCounter);

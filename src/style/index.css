@@ -1197,6 +1197,16 @@ a {
 .form__container form #message-msg.shown {
   bottom: 4px;
 }
+.form__container form #counter {
+  background-color: #4353ff;
+  color: #fff;
+  position: absolute;
+  display: inline;
+  right: 0;
+  bottom: -18px;
+  border-radius: 15px;
+  padding: 5px;
+}
 
 .animate-form.animate {
   animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;

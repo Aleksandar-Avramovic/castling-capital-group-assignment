@@ -1,7 +1,5 @@
-- Odradi responsive za sve sekcije
 - Ostale su ti animacije (probaj da ugasis animacije na headeru kada predju iz sticky u obian header)
 - Lepse organizuj js fajlove tako da u HTML ukljucis samo jedan poziv
 - Iscackaj kako bi mogao da koristis @extend u Sass-u da ne bi ponavljao kod bazicne stilizacije
-- Pogledaj kako bi mogao da uradis i stilizujes validaciju forme na frontu
 - Footer (proveri da li mozes da sredis width border-a)
 - animacija reveal ide red po red
