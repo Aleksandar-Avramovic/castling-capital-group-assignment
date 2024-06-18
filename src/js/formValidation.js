@@ -63,6 +63,14 @@ const validatePhone = () => {
 const validateName = () => validateField("name", "name-msg");
 const validateMessage = () => validateField("message", "message-msg");
 
+// Clear input fields
+const clearForm = () => {
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("phone").value = "";
+  document.getElementById("message").value = "";
+};
+
 // Validate form on submit
 document.getElementById("form").addEventListener("submit", (e) => {
   e.preventDefault();
@@ -74,6 +82,8 @@ document.getElementById("form").addEventListener("submit", (e) => {
 
   if (isNameValid && isEmailValid && isPhoneValid && isMessageValid) {
     console.log("Form data is valid.");
+
+    clearForm();
   }
 });
 
