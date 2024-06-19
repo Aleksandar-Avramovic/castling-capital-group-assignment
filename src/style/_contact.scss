@@ -87,8 +87,12 @@
     .name__block,
     .email__block,
     .phone__block,
-    .msg__block {
+    .msg__block,
+    .btn__block {
       position: relative;
+    }
+    .btn__block {
+      height: 54px;
     }
     input,
     textarea {
@@ -156,6 +160,11 @@
   }
 }
 
+.check-icon {
+  display: none;
+  position: absolute;
+  left: 48px;
+}
 // Animations
 .animate-form.animate {
   animation: moveRight 1s ease-in-out forwards, flash 1s linear forwards;

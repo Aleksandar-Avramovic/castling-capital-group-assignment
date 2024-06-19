@@ -1,14 +1,14 @@
 .header {
   height: 86px;
   background-color: $primary-blue;
-  top: -86px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.35s ease;
   .container {
     height: 100%;
     .header__container {
       height: 100%;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       .header__logo-wrapper {
         height: 100%;
         display: flex;
