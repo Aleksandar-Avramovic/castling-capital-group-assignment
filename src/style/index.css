@@ -100,7 +100,6 @@ a {
 }
 .header .container .header__container .header__logo-wrapper .header__logo {
   transform: scale(0);
-  animation: zoomIn 1s ease-out forwards;
 }
 .header .container .header__container .header__nav {
   display: block;
@@ -182,6 +181,10 @@ a {
 .header .container .header__container .mobile-menu .bar:nth-child(3) {
   width: 60%;
   margin-left: 12px;
+}
+
+.header.loaded .container .header__container .header__logo-wrapper .header__logo {
+  animation: zoomIn 1s ease-out forwards;
 }
 
 .header.header--sticky .container .header__container .header__logo-wrapper a .header__logo {

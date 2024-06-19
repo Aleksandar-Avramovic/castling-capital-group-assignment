@@ -16,7 +16,6 @@
         margin-left: -5px;
         .header__logo {
           transform: scale(0);
-          animation: zoomIn 1s ease-out forwards;
         }
       }
       .header__nav {
@@ -109,6 +108,18 @@
           @extend .bar, :nth-child(1);
           width: 60%;
           margin-left: 12px;
+        }
+      }
+    }
+  }
+}
+
+.header.loaded {
+  .container {
+    .header__container {
+      .header__logo-wrapper {
+        .header__logo {
+          animation: zoomIn 1s ease-out forwards;
         }
       }
     }
