@@ -51,7 +51,9 @@
 .container__bottom-section {
   border-top: 1px solid $primary-white;
   padding-top: 24px;
-  padding-left: 14px;
+  // padding-left: 14px;
+  width: 1320px;
+  margin-left: -5px;
   .bottom-section__content {
     width: 1024px;
     text-align: center;
@@ -133,6 +135,10 @@
         gap: 40px;
       }
     }
+  }
+  .container__bottom-section {
+    margin-left: 0;
+    width: 100%;
   }
 }
 

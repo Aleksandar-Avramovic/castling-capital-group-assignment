@@ -1162,6 +1162,9 @@ a {
 .form__container form .btn__block {
   height: 54px;
 }
+.form__container form .msg__block {
+  margin-bottom: -5px;
+}
 .form__container form input,
 .form__container form textarea {
   font-family: "Bw Modelica SS01";
@@ -1379,7 +1382,8 @@ a {
 .container__bottom-section {
   border-top: 1px solid #fff;
   padding-top: 24px;
-  padding-left: 14px;
+  width: 1320px;
+  margin-left: -5px;
 }
 .container__bottom-section .bottom-section__content {
   width: 1024px;
@@ -1443,6 +1447,10 @@ a {
   .container__above-section .above-section__nav ul {
     justify-content: center;
     gap: 40px;
+  }
+  .container__bottom-section {
+    margin-left: 0;
+    width: 100%;
   }
 }
 @media (max-width: 1200px) {
