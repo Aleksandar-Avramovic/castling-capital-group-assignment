@@ -89,23 +89,20 @@ document.getElementById("form").addEventListener("submit", (e) => {
   const isMessageValid = validateMessage();
 
   if (isNameValid && isEmailValid && isPhoneValid && isMessageValid) {
-    const btn = document.getElementById("submit-btn");
     const loader = document.getElementById("loader");
-    const logo = document.getElementById("check-icon");
-
-    btn.style.display = "none";
+    const popup = document.getElementById("popup");
+    const submitBtn = document.getElementById("submit-btn");
     loader.style.display = "block";
-
+    submitBtn.disabled = true;
     setTimeout(() => {
       loader.style.display = "none";
-      logo.style.display = "block";
-
+      popup.style.display = "flex";
       setTimeout(() => {
-        logo.style.display = "none";
-        btn.style.display = "block";
+        popup.style.display = "none";
         clearForm();
         updateCounter();
-      }, 1500);
+        submitBtn.disabled = false;
+      }, 3000);
     }, 3000);
   }
 });
