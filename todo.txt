@@ -1,4 +1,0 @@
-- Ostale su ti animacije (probaj da ugasis animacije na headeru kada predju iz sticky u obian header)
-- Lepse organizuj js fajlove tako da u HTML ukljucis samo jedan poziv
-- Iscackaj kako bi mogao da koristis @extend u Sass-u da ne bi ponavljao kod bazicne stilizacije
-- animacija reveal ide red po red

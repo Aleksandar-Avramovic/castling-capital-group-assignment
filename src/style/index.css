@@ -54,13 +54,22 @@ a {
   border-radius: 32px;
   border: 1px solid rgba(8, 0, 133, 0);
   cursor: pointer;
-  transition: 0.3s;
+  transition: all 0.3s ease;
 }
 
 .button:hover {
   color: #4353ff;
   background-color: #fff;
   border: 1px solid #4353ff;
+}
+
+.button:disabled,
+.button:hover:disabled {
+  cursor: not-allowed;
+  border: 1px solid rgba(8, 0, 133, 0);
+  background-color: #4353ff;
+  color: #fff;
+  opacity: 0.6;
 }
 
 .overlay {
@@ -1048,15 +1057,15 @@ a {
 }
 .loader {
   display: none;
-  border: 10px solid #ada9bb;
-  border-top: 10px solid #4353ff;
+  border: 6px solid #ada9bb;
+  border-top: 6px solid #4353ff;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   animation: spin 2s linear infinite;
   position: absolute;
-  bottom: -2px;
-  left: 40px;
+  bottom: 8px;
+  left: 160px;
 }
 
 @keyframes spin {
@@ -1148,6 +1157,7 @@ a {
 }
 
 .form__container {
+  position: relative;
   margin-right: -24px;
 }
 .form__container form {
@@ -1239,10 +1249,29 @@ a {
   bottom: -2px;
 }
 
-.check-icon {
+.popup {
   display: none;
+  flex-direction: column;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 88%;
+  background-color: #151f5a;
+  border-radius: 15px;
   position: absolute;
-  left: 48px;
+  top: -6px;
+  padding: 0 20px;
+}
+.popup .popup-img {
+  margin-top: -200px;
+}
+.popup .popup-text {
+  font-family: "Bw Modelica SS01", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #fff;
+  text-align: center;
 }
 
 .animate-form.animate {
